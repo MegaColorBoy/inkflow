@@ -12,7 +12,7 @@ inkflow export --mode=rss
 
 echo "Syncing generated output to ghpages..."
 mkdir -p ghpages
-rsync -a --delete output/ ghpages/
+rsync -a --delete --exclude=".git" output/ ghpages/
 
 echo "Committing and pushing changes if needed..."
 git -C ghpages add -A
