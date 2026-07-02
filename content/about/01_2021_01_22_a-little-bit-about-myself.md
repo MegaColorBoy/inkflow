@@ -20,7 +20,7 @@ Oh, do you have an idea that you're stuck with? Need help with deployments? Want
 
 In my spare time, I love to tinker with my computer science and software engineering projects like implementing new algorithms, learning new programming languages or paradigms, building a game and so on. I also design conceptual user interfaces after being exposed to the [DailyUI](https://dailyui.co) project.
 
-This blog is powered by a custom-built static site generator written in Python. No bootstrap, no heavy UI frameworks or libraries are used as I found it quite unnecessary for a minimalist blog.
+This blog is powered by a [custom-built static site generator](https://github.com/MegaColorBoy/inkflow) written in Python. No bootstrap, no heavy UI frameworks or libraries are used as I found it quite unnecessary for a minimalist blog.
 
 Oh, I'm an intermediate-level toss juggler and I love to spend time practicing my juggling skills. Apart from that, I practice calisthenics, read books and listen to instrumental music.
 
