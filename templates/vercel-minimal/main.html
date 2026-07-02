@@ -1,0 +1,19 @@
+{% include 'partials/header.html' %}
+
+<main class="page-shell">
+    <section class="page-intro page-intro-home">
+        <p class="eyebrow">Latest</p>
+        <h1>{{ page.title }}</h1>
+        <p class="lede">{{ page.description }}</p>
+    </section>
+
+    <section class="post-list" aria-label="Latest posts">
+        {% for post in posts %}
+            {% include 'partials/post-card.html' %}
+        {% endfor %}
+    </section>
+
+    {% include 'partials/paginator.html' %}
+</main>
+
+{% include 'partials/footer.html' %}

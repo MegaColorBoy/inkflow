@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html data-theme="" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Abdush Shakoor">
+	{% if generate_meta %}
+	<meta name="description" content="{{ page.description }}.">
+	<meta name="og:title" content="{{ page.title }} | Abdush Shakoor's Weblog" />
+	<meta name="og:type" content="article" />
+	<meta name="og:url" content="{{ page.url }}" />
+	<meta name="og:description" content="{{ page.description }}" />
+	<meta name="og:image" content="{{ post.preview_image_url }}" />
+	<meta name="og:site_name" content="Abdush Shakoor's Weblog | Abdush Shakoor's Weblog" />
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="megacolorboy.com" />
+	<meta property="twitter:url" content="{{ page.url }}" />
+	<meta name="twitter:title" content="{{ page.title }} | Abdush Shakoor's Weblog" />
+	<meta name="twitter:description" content="{{ page.description }}" />
+	<meta name="twitter:image" content="{{ post.preview_image_url }}" />
+
+	{% endif %}
+	<meta name="robots" content="follow">
+	<title>{{ page.title }} | Abdush Shakoor's Weblog </title>
+	<link rel="stylesheet" href="/static/css/main.css" type="text/css">
+	<link rel="stylesheet" href="/static/css/travel.css" type="text/css">
+	<link rel="stylesheet" href="/static/vendor/fancybox/jquery.fancybox.min.css" type="text/css">
+
+	{% include 'partials/favicon.html' %}
+</head>
+<body class="{{ body_class }} travel-page">
+	<header class="header">
+		<!-- Logo with Author Name -->
+		<div class="author">
+			<a href="/">
+				<img src="/static/logo.png" alt="megacolorboy">
+				<div class="name">
+					<h1>Abdush Shakoor's Weblog</h1>
+				</div>
+			</a>
+		</div>
+		<!-- Logo with Author Name -->
+	</header>

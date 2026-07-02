@@ -1,0 +1,15 @@
+{% set site_meta = site if site is defined else site_dict %}
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="brand" href="/" aria-label="{{ site_meta.name }} home">
+            <span class="brand__name">{{ site_meta.name }}</span>
+            <span class="brand__tagline">{{ page.description if page.title == 'Home' else 'Writing, experiments and notes.' }}</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+            {% for item in menu %}
+                <a href="{{ item.link }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>

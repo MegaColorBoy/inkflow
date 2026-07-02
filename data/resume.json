@@ -1,0 +1,228 @@
+{
+	"basics": {
+		"phone_number": {
+			"display": "+971 50 2789 216",
+			"href": "00971502789216"
+		},
+
+		"email_address": {
+			"display": "abdushshakoor1992@hotmail.com",
+			"href": "mailto:abdushshakoor1992@hotmail.com"
+		},
+
+		"github_url": {
+			"display": "https://github.com/megacolorboy",
+			"href": "https://github.com/megacolorboy"
+		},
+
+		"website_url": {
+			"display": "https://megacolorboy.com",
+			"href": "https://megacolorboy.com"
+		}
+	},
+
+	"experience": [{
+			"role": "Web Developer - Backend",
+			"company_name": "Planet Green Solutions",
+			"location": "Dubai, UAE",
+			"date_from": "Jan 2020",
+			"date_to": "Ongoing",
+			"tech_used": [
+				"PHP",
+				"C#",
+				".NET Core",
+				"ABP Framework",
+				"JavaScript",
+				"AWS",
+				"Linux",
+				"Laravel",
+				"MySQL",
+				"SQL",
+				"Azure DevOps"
+			],
+			"bullets": [
+				"Delivered over 50+ web applications leveraging technologies such as PHP, C#, JavaScript, Laravel, .NET Core, ABP Framework, MySQL and Microsoft SQL Server.",
+				"Handles Linux server operations encompassing server hardening, file migrations, backups, server and database configuration and seamless deployments for minimal downtime.",
+				"Made vital contributions to high-profile government projects such as Federal Tax Authority, Ministry of Culture, Ministry of Cabinet Affairs and Ministry of Economy by consistently delivering secure, high-quality solutions with stringent timeframes.",
+				"Hands-on experience of setting up reliable systems and successfully deploying packages on AWS, Microsoft Azure, Windows Server and Linux servers with different flavours such as CentOS, Ubuntu and AMI Linux 2",
+				"Stay current with cutting-edge technologies, best practices, and methodologies, driving the delivery of innovative and effective solutions."
+			]
+		},
+		{
+			"role": "Web/Software Developer",
+			"company_name": "Key Information Technology",
+			"location": "Dubai, UAE",
+			"date_from": "Nov 2016",
+			"date_to": "Oct 2019",
+			"tech_used": [
+				"PHP",
+				"JavaScript",
+				"C#",
+				"ASP.NET",
+				"MySQL"
+			],
+			"bullets": [
+				"Developed the company's website using PHP, JavaScript, SCSS and MySQL Server, contributing to its online presence and user engagement.",
+				"Played a key role in developing a Loyalty management application using ASP.NET and Microsoft SQL Server, enhancing customer engagement and retention.",
+				"Spearheaded the creation of customized dashboards and tools for critical departments, including Marketing, Projects, and HR, optimizing internal processes.",
+				"Elevated website visibility and performance through SEO enhancements and optimizations, resulting in improved user experience and higher search rankings.",
+				"Mentored and guided 3 interns, imparting best practices and enhancing their skills, while contributing to a collaborative and productive team environment."
+			]
+		},
+		{
+			"role": "Software Engineering Intern",
+			"company_name": "Aufait Systems",
+			"location": "Dubai, UAE",
+			"date_from": "Feb 2016",
+			"date_to": "Apr 2016",
+			"tech_used": [
+				"Java",
+				"Android Studio",
+				"Unity",
+				"PHP",
+				"MySQL",
+				"JavaScript"
+			],
+			"bullets": [
+				"Wrote a custom AR Android app for a car showroom.",
+				"Developed APIs & Admin Panels for custom-built web applications."
+			]
+		},
+		{
+			"role": "Web Development Intern",
+			"company_name": "Tradeasia International",
+			"location": "Dubai, UAE",
+			"date_from": "Sep 2015",
+			"date_to": "Nov 2015",
+			"tech_used": [
+				"Java",
+				"JSP",
+				"WordPress",
+				"PHP",
+				"MySQL"
+			],
+			"bullets": [
+				"Migrated the existing WordPress codebase to JSP"
+			]
+		}
+	],
+
+	"projects": [{
+			"name": "Static Site Generator",
+			"description": "Custom-tailored static site generator for my blog & resume.",
+			"tags": [
+				"Python",
+				"Jinja2",
+				"Markdown"
+			]
+		},
+		{
+			"name": "Project Euler solutions",
+			"description": "Solving mathematical puzzles by writing optimized code.",
+			"tags": [
+				"JavaScript",
+				"C++",
+				"Python"
+			]
+		},
+		{
+			"name": "Space Invaders Generator",
+			"description": "Generates random & beautiful Space Invaders-esque patterns.",
+			"tags": [
+				"JavaScript",
+				"Canvas"
+			]
+		},
+		{
+			"name": "Toy Crypto Library",
+			"description": "Wrote a library to solve The Cryptopals Crypto Challenges.",
+			"tags": [
+				"Python",
+				"C/C++"
+			]
+		},
+		{
+			"name": "Mini-games",
+			"description": "Built clones of 2048, Tetris, Pong, Minesweeper & much more.",
+			"tags": [
+				"JavaScript",
+				"Canvas"
+			]
+		}
+	],
+
+	"skills": [
+		"Problem Solving",
+		"UI Design",
+		"Teamwork",
+		"Adaptable",
+		"Quick Learning",
+		"Agile",
+		"Good at Googling",
+		"Works well under pressure"
+	],
+
+	"tech_professional": [
+		"PHP",
+		"C#",
+		".NET Core",
+		"ABP Framework",
+		"MySQL",
+		"SQL",
+		"Laravel",
+		"JavaScript",
+		"Bash",
+		"HTML",
+		"CSS",
+		"SCSS",
+		"AWS",
+		"Apache",
+		"Nginx",
+		"CentOS",
+		"Ubuntu",
+		"jQuery",
+		"Git",
+		"Azure DevOps"
+	],
+
+	"tech_hobbyist": [
+		"Python",
+		"C/C++",
+		"WebGL",
+		"Golang",
+		"Jupyter",
+		"Markdown",
+		"Jinja2",
+		"ReactJS",
+		"NodeJS",
+		"Rust",
+		"FreeBSD"
+	],
+
+	"tools": [],
+
+	"interests": [
+		"CTFs",
+		"Backend Development",
+		"Distributed Systems",
+		"Service-Oriented Architecture",
+		"Data Science",
+		"AI/ML",
+		"Computer Graphics",
+		"Generative Art",
+		"Linux Administration",
+		"Mathematics",
+		"Web Development"
+	],
+
+	"education": [{
+		"certification": "B. Computer Science",
+		"institute_name": "University of Wollongong",
+		"location": "Dubai, UAE",
+		"date_from": "Sep 2011",
+		"date_to": "Oct 2016",
+		"bullets": [
+			"Won the People's Choice Award for the Capstone Project in Summer 2015."
+		]
+	}]
+}

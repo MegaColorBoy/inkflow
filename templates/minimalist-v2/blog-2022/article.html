@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abdush Shakoor's Weblog</title>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="inter/inter.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+	
+	<header class="header">
+		<!-- Logo with Author Name -->
+		<div class="author">
+			<a href="index.html">
+				<img src="https://www.megacolorboy.com/static/logo.gif" alt="megacolorboy">
+				<div class="name">
+					<h1>Abdush Shakoor's Weblog</h1>
+					<p>Writings, experiments & ideas.</p>
+				</div>
+			</a>
+		</div>
+		<!-- Logo with Author Name -->
+		<nav>
+			<ul class="menu">
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<!-- <li><a href="#">Today I Learned</a></li> -->
+				<!-- <li><a href="#">Blogmarks</a></li> -->
+				<li><a href="#">Resume</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<main>
+		<!-- <div class="two-col-grid overband">
+			<div>Recent articles</div>
+			<div>Blogmarks</div>
+		</div> -->
+		<div class="two-col-grid">
+			<!-- Displays 4-5 full articles  -->
+			<section id="primary">
+				<div class="articles">
+					<div class="article">
+						<div class="article-header">
+							<h1 class="heading"><a href="#">New makeover for 2022</a></h1>
+							<p class="description">Minimalist, scraped out a few things and added some new stuff.</p>
+						</div>
+						<div class="article-body">
+							<p>I have been reading a lot than writing these days, thanks to my hectic schedule, I barely get the time to even look at my blog.</p>
+
+							<p>Previously, I used to have different sections of articles such as <b>Writings</b> and <b>Today I Learned</b> but now, it hit to me, why did I even create such sections if both of them are supposed to represent my learning experiences?</p>
+
+							<p>So, from here onwards, I decided to merge both sections into one and I call it as a "Weblog". And also, thanks to <a href="#">Simon Willison's Blog</a>, I took the idea of "Blogmarks" and it's basically a collection of articles and quotes that I found interesting and would share it here.</p>
+
+							<p>After taking some feedback from some of my colleagues and friends, I added features like search and tags to help users find content easier.</p>
+
+							<p>I did a few tweaks to my blog engine and the UI to make it look more minimal and to the point, while I still retained the colors and fonts used in the previous layout (Thank you, Rasmus for the amazing <a href="#">Inter</a> font ❤).</p>
+
+							<p>I hope you like the new look of this site.</p>
+						</div>
+						<div class="article-footer">
+							<time>1st July 2022</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Update
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+				Contains blog links that I follow 
+				Bookmarks
+				Interesting quotes/content
+			-->
+			<section id="secondary">
+				
+				<div class="sidebar">
+					<div class="author-intro">
+						<h3>Hello, I'm Abdush Shakoor! &#x1F44B;</h3>
+						<p>I'm a programmer & designer based in Dubai, United Arab Emirates. I love tinkering with code and writing about what I learn.</p>
+						<p>This website is my digital garden &mdash; a compendium of the things I've learned and created over the years.</p>
+
+						<ul class="sitemap">
+							<li><a class="back" href="#"><span>👈</span> Check out more articles!</a></li>
+						</ul>
+					</div>
+
+					<!-- Search bar -->
+					<div class="search-bar">
+						<input type="text" placeholder="🔍 Search for anything here..." />
+						<button type="submit">Search</button>
+					</div>
+					<!-- Search bar -->	
+
+					<!-- Tags -->
+					<div>
+						<!-- <h3>Tags</h3> -->
+						<ul class="tags">
+							<li>
+								<a href="#">
+									DevOps
+									<span class="count">10</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Programming
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Linux
+									<span class="count">12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Productivity
+									<span class="count">2</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									VIM
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									VSCode
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									MySQL
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Git
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Unix
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									PHP
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Laravel
+									<span class="count">5</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Tags -->	
+				</div>
+			</section>
+		</div>
+
+		
+	</main>
+
+	<footer>
+		<span class="copyright">&copy; Abdush Shakoor</span>
+	</footer>
+</body>
+</html>

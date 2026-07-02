@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abdush Shakoor's Weblog</title>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="inter/inter.css">
+	<link rel="stylesheet" href="style.css">	
+	<script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+	
+	<header class="header">
+		<!-- Logo with Author Name -->
+		<div class="author">
+			<a href="index.html">
+				<img src="https://www.megacolorboy.com/static/logo.gif" alt="megacolorboy">
+				<div class="name">
+					<h1>Abdush Shakoor's Weblog</h1>
+					<p>Writings, experiments & ideas.</p>
+				</div>
+			</a>
+		</div>
+		<!-- Logo with Author Name -->
+		<nav>
+			<ul class="menu">
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<!-- <li><a href="#">Today I Learned</a></li> -->
+				<!-- <li><a href="#">Blogmarks</a></li> -->
+				<li><a href="#">Resume</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<main>
+		<!-- <div class="two-col-grid overband">
+			<div>Recent articles</div>
+			<div>Blogmarks</div>
+		</div> -->
+		<div class="two-col-grid">
+			<!-- Displays 4-5 full articles  -->
+			<section id="primary">
+				<div class="articles">
+					<div class="article">
+						<div class="article-header">
+							<h1 class="heading"><a href="article.html">New makeover for 2022</a></h1>
+							<p class="description">Minimalist, scraped out a few things and added some new stuff.</p>
+							<!-- <div class="tiles-wall"></div> -->
+						</div>
+						<div class="article-body">
+							<p>I have been reading a lot than writing these days, thanks to my hectic schedule, I barely get the time to even look at my blog.</p>
+
+							<p>Previously, I used to have different sections of articles such as <b>Writings</b> and <b>Today I Learned</b> but now, it hit to me, why did I even create such sections if both of them are supposed to represent my learning experiences?</p>
+
+							<p>So, from here onwards, I decided to merge both sections into one and I call it as a "Weblog". And also, thanks to <a href="#">Simon Willison's Blog</a>, I took the idea of "Blogmarks" and it's basically a collection of articles and quotes that I found interesting and would share it here.</p>
+
+							<p>After taking some feedback from some of my colleagues and friends, I added features like search and tags to help users find content easier.</p>
+
+							<p>I did a few tweaks to my blog engine and the UI to make it look more minimal and to the point, while I still retained the colors and fonts used in the previous layout (Thank you, Rasmus for the amazing <a href="#">Inter</a> font ❤).</p>
+
+							<p>I hope you like the new look of this site.</p>
+						</div>
+						<div class="article-footer">
+							<time>1st July 2022</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Update
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="day article">
+						<h3><a href="#">10th June 2022</a> &mdash; Review</h3>
+						<ul>
+							<li class="blogmark">
+								<blockquote><p>Becoming a good engineer is about collecting experience. Each project, even small ones, is a chance to add new techniques and tools to your toolbox. Where this delivers even more value is when you can solve problems by pairing techniques learned on one project with tools learned working on another. It all adds up.</p></blockquote><p class="cite">— <a href="https://addyosmani.com/blog/software-engineering-soft-parts/">Addy Osmani</a></p>
+							</li>
+							<li class="blogmark">
+						      <a href="https://dx.tips/the-end-of-localhost">The End of Localhost</a>. <p>swyx makes the argument for cloud-based development environments, and points out that many large companies—including Google, Facebook, Shopify and GitHub—have made the move already. I was responsible for the team maintaining the local development environment experience at Eventbrite for a while, and my conclusion is that with a large enough engineering team someone will ALWAYS find a new way to break their local environment: the idea of being able to bootstrap a fresh, guaranteed-to-work environment in the cloud at the click of a button could save SO much time and money. </p>
+						  </li>
+						  
+						  <li class="blogmark">
+						      <a href="https://blog.pyston.org/2022/06/08/announcing-pyston-lite-our-python-jit-as-an-extension-module/">Announcing Pyston-lite: our Python JIT as an extension module</a> (<a href="https://news.ycombinator.com/item?id=31670120" title="Hacker News">via</a>) <p>The Pyston JIT can now be installed in any Python 3.8 virtual environment by running “pip install pyston_lite_autoload”—which includes a hook to automatically inject the JIT. I just tried a very rough benchmark against Datasette (ab -n 1000 -c 10) and got 391.20 requests/second without the JIT compared to 404.10 request/second with it.</p>
+						  </li>
+						</ul>
+					</div>
+
+					<div class="article">
+						<div class="article-header">
+							<h1 class="heading"><a href="#">I switched to Fedora 35</a></h1>
+							<p class="description">Switched from Void Linux to Fedora 35</p>
+						</div>
+						<div class="article-body">
+							<p>Yes, I distro-hopped again but I guess it's a meaningful decision.</p>
+
+							<p>Just press <kbd>Ctrl</kbd> <kbd>C</kbd> and <kbd>Ctrl</kbd> <kbd>V</kbd> to copy-paste.</p>
+
+							<p>I was using Void Linux with an <code>i3wm</code> tiling manager setup to see if it would improve my programming productivity.</p>
+
+							<p>I've got to say that <code>i3wm</code> is an amazing tiling manager and if you are into tiling windows, this should be something worth of your time.</p>
+
+							<p>On the other hand, I thought of trying out Void Linux because I was tired of Ubuntu and it's bloat, whereas Void Linux is quite minimal and lightweight.</p>
+
+							<h2>Then, why leave it?</h2>
+
+							<p>It has a good package manager that is similar to Arch's AUR repository but the lack of documentation and updates made me feel that there's barely contributions for it.</p>
+
+							<p>I had issues using docker and virtualbox in it, often giving me compatibility issues at times, which left me frustrated.</p>
+
+							<h2>Hello, Fedora!</h2>
+
+							<p>When I decided to distro-hop, I had to give myself some time and research as to which distro would really suit me as a programmer and that would just work out of the box.</p>
+
+							<p>I wanted something that:</p>
+
+							<ul>
+								<li>is developer-oriented.</li>
+								<li>stable but bleeding-edge.</li>
+								<li>just works out-of-the-box.</li>
+								<li>has a minimal and clean looking interface.</li>
+							</ul>
+
+							<p>That's when Fedora came into the picture and according to what I have researched especially on forums like Reddit, it's directed towards programmers and sysadmins.</p>
+
+							<p>Another sellout point for me was RedHat because I use CentOS at my workplace to configure and deploy web applications.</p>
+
+							<p>RedHat developers are really dedicated and ensure that they push the stable yet bleeding-edge releases.</p>
+
+							<p>The installation process was smooth and the new Gnome 41 is a bliss.</p>
+
+							<p>I didn't want to use <code>i3wm</code> this time because I felt that I always tiled multiple terminal windows, so I thought I would replace that with <code>tmux</code> instead. And besides, I don't really want to spend a lot of time tinkering each and every part of my UI, I'd rather spend that time writing code that solves problems instead.</p>
+						</div>
+						<div class="article-footer">
+							<time>20th February 2022</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Productivity
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Linux
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="article">
+						<div class="article-header">
+							<h1><a href="#">Is SELinux Complicated?</a></h1>
+							<p class="description">If you turn off SELinux for a living, try this.</p>
+						</div>
+						<div class="article-body">
+							<p>This might look a rant post but hear me out, okay?</p>
+
+							<p>Ever deployed an application on CentOS and tried to figure out why it isn't working when it's caused due to some permission issue by SELinux enabled?</p>
+
+							<p>Yeah, I know how annoying that is. So, whenever I go on StackOverflow, many people suggest to completely turn it off.</p>
+
+							<p>Well, it might be tempting to type <code>sudo setenforce 0</code> (which sets SELinux to Permissive mode), I wouldn't really recommend you to edit the SELinux config and disable it completely.</p>
+
+							<p>I recently read a blog post on CentOS's official blog and I'd like to quote them for asking this:</p>
+
+							<blockquote>
+							  <p>But why do articles feel the need to outright deactivate SELinux rather than help readers work through any problems they might have? Is SELinux that hard?</p>
+							</blockquote>
+
+							<p>Good question. Is it really that hard or is it because we don't really understand it? I think it's the latter.</p>
+
+							<h2>But why so?</h2>
+
+							<p>I guess, as users, we really need some sort of user interface to receive feedback because not everyone is really good at the terminal and most importantly, not good at memorizing options and flag combinations.</p>
+
+							<p>Here's a sample error that I would face sometimes while deploying a Laravel web application on CentOS 7:</p>
+
+							<pre>
+								<code class="bash hljs">
+								[Mon May 16 11:39:32.996441 2016] [:error] [pid 2434] [client XXX.XXX.XXX.XXX:8080] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file <span class="hljs-string">"/var/www/html/MYSITE/storage/logs/laravel.log"</span> could not be opened: failed to open stream: Permission denied <span class="hljs-keyword">in</span> /var/www/html/MYSITE/bootstrap/cache/compiled.php:13701
+								Stack trace:
+								<span class="hljs-comment">#0 /var/www/html/MYSITE/bootstrap/cache/compiled.php(13635): Monolog\\Handler\\StreamHandler-&gt;write(Array)</span>
+								<span class="hljs-comment">#1 /var/www/html/MYSITE/bootstrap/cache/compiled.php(13396): Monolog\\Handler\\AbstractProcessingHandler-&gt;handle(Array)</span>
+								<span class="hljs-comment">#2 /var/www/html/MYSITE/bootstrap/cache/compiled.php(13494): Monolog\\Logger-&gt;addRecord(400, Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException), Array)</span>
+								<span class="hljs-comment">#3 /var/www/html/MYSITE/bootstrap/cache/compiled.php(13189): Monolog\\Logger-&gt;error(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException), Array)</span>
+								<span class="hljs-comment">#4 /var/www/html/MYSITE/bootstrap/cache/compiled.php(13160): Illuminate\\Log\\Writer-&gt;writeLog('error', Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException), Array)</span>
+								<span class="hljs-comment"># in /var/www/html/MYSITE/bootstrap/cache/compiled.php on line 13701</span>
+							</code>
+							</pre>
+
+							<p>By looking at this error, you do understand it's permission-related but it doesn't really indicate that it's an SELinux problem because there could be thousands of reasons why there could be such an error. And of course, when I look it up on Google, I do find many people facing the same issue due to SELinux being enabled.</p>
+
+							<p>Instead of disabling it completely, I would try doing this:</p>
+
+							<pre>
+								<code class="bash hljs">
+								chcon -R -t httpd_sys_rw_content_t storage
+								</code>
+							</pre>
+
+							<p>And off goes the error and the application didn't give any permission-related issues again.</p>
+
+							<p>Is it worth disabling SELinux? No. </p>
+
+							<p>But does SELinux have an issue of being user friendly? I guess, yes.</p>
+
+							<p>I'm just like you, sometimes, I do switch off SELinux at times when it's critical to deploy the application so that I can leave home early but that's not really a good practice.</p>
+
+							<h2>Conclusion</h2>
+
+							<p>I do wish that the open source developers of SELinux could do something to make much more friendlier to use? Or maybe, some way that let's the user know what to do instead of letting the user <code>chmod</code>-ing and <code>chown</code>-ing files and directories endlessly. Or worse, completely disabling SELinux!</p>
+
+							<p>Hope you found this article interesting!</p>
+
+							<p>Stay tuned for more.</p>
+						</div>
+						<div class="article-footer">
+							<time>25th December 2021</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										DevOps
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="article">
+						<div class="article-header">
+							<h1><a href="#">The 15 Puzzle Game</a></h1>
+							<p class="description">A classical numbered puzzle that requires the player to place all the tiles in an ordered sequence.</p>
+						</div>
+						<div class="article-body">
+							<iframe src="https://megacolorboy.com/static/projects/15-puzzle" width="500" height="500"></iframe>
+
+							<p>Before you read this article, play with the above puzzle. You can move the block around by <strong><em>left-clicking</em></strong> on a numbered tile that's adjacent to the empty tile.</p>
+
+							<p>The source code for this puzzle can be found <a href="https://github.com/megacolorboy/BlogProjects/tree/master/15-puzzle">over here</a>.</p>
+
+							<h2>Background</h2>
+
+							<p>This is a game that has been on my list of projects for a long time and I've finally decided to work on it last night. Although, this post has nothing to do with Artificial Intelligence, I was inspired to write this game when I studied about <a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)">Heuristics</a> in the book named <a href="/posts/artificial-intelligence-a-modern-approach--chapter-1">Artificial Intelligence: A Modern Approach</a> and on how it was applied to this game.</p>
+
+							<h2>What are the game mechanics?</h2>
+
+							<p>This game is played on a <strong><em>four-by-four</em></strong> grid with numbered tiles that are shuffled randomly. As you can see, there are <strong><em>15 numbered cells</em></strong> and <strong><em>1 empty cell</em></strong> in the grid, this is to allow movement of the tiles within the grid.</p>
+
+							<p>However, the movement is limited to the numbered tiles that are adjacent to the empty tile.</p>
+
+							<p>The player wins the game after ordering all the numbered tiles in the grid in an order of ascending sequence.</p>
+
+							<h2>Source code</h2>
+
+							<pre>
+								<code class="js">
+									var board = [], rows = 4, cols = 4;
+									var possibleMoves, zx, zy, oldzx = -1, oldzy = -1;
+
+									//Generate 2D Board
+									function generateBoard()
+									{
+										for(var i=0; i&lt;rows; i++)
+										{
+											board[i] = [];
+										}
+
+										for(var j=0; j&lt;cols; j++)
+										{
+											for(var i=0; i&lt;rows; i++)
+											{
+												board[j][i] = (i + j * 4) + 1;
+											}
+										}
+
+										//position of the empty cell in the grid i.e. 3,3
+										zx = zy = 3;
+										board[zx][zy] = 16;
+									}
+
+									//Generate the cells
+									function generateCells()
+									{
+										var grid = document.createElement("div");
+										grid.className += "board";
+
+										document.body.appendChild(grid);
+
+										for(var j=0; j&lt;4; j++)
+										{
+											for(var i=0; i&lt;4; i++)
+											{
+												var cell = document.createElement("div");
+												cell.className += "cell";
+												cell.id = "cell_" + (i + j * 4);
+												cell.row = i;
+												cell.col = j;
+												cell.addEventListener("click", cellEventHandle, false);
+												cell.appendChild(document.createTextNode(""));
+												grid.appendChild(cell);
+											}
+										}
+									}
+
+									/*
+									Determine the possible number of moves
+									based on the empty cell's coordinates.
+									*/
+									function genPossibleMoves()
+									{
+										possibleMoves = [];
+										var ii, jj;
+
+										/*
+										Just for reference:
+										The empty cell can be moved in the following x,y coords:
+										-1,0, 0,-1, 1,0, 0,1
+										*/
+										var xCoords = [-1, 0, 1, 0];
+										var yCoords = [0, -1, 0, 1];
+
+										for(var i=0; i&lt;4; i++)
+										{
+											ii = zx + xCoords[i];
+											jj = zy + yCoords[i];
+
+											//If it's out of bounds, skip it
+											if(ii &lt; 0 || jj &lt; 0 || ii &gt; 3 || jj &gt; 3)
+											{
+												continue;
+											}
+
+											possibleMoves.push({x: ii, y: jj});
+										}
+									}
+
+									function updateCells()
+									{
+										for(var j=0; j&lt;cols; j++)
+										{
+											for(var i=0; i&lt;rows; i++)
+											{
+												var cell_id = "cell_" + (i + j * 4);
+												var cell = document.getElementById(cell_id);
+												var val = board[i][j];
+
+												if(val &lt; 16)
+												{
+													cell.innerHTML = ("" + val);
+													if(val % 2 == 0)
+													{
+														cell.className = "cell dark";               
+													}
+													else
+													{
+														cell.className = "cell light";
+													}
+												}
+												else
+												{
+													cell.innerHTML = "";
+													cell.className = "empty";
+												}
+											}
+										}
+									}
+
+									//Event handler for each cell
+									function cellEventHandle(e)
+									{
+										genPossibleMoves();
+
+										//Current coords of the cell
+										var r = e.target.row;
+										var c = e.target.col;
+										var pos = -1;
+										var isPossible = false;
+										// console.log(r + "," + c);
+
+										/*
+										Check if the current cell is 
+										one of the possible moves
+										*/
+										for(var i=0; i&lt;possibleMoves.length; i++)
+										{
+											if(possibleMoves[i].x == r && possibleMoves[i].y == c)
+											{
+												isPossible = true;
+												pos = i;
+												break;
+											}
+										}
+
+										if(isPossible)
+										{
+											var temp = possibleMoves[pos];
+
+											//Swap position of the empty cell
+											board[zx][zy] = board[temp.x][temp.y];
+											//Update the coordinates of the empty cell
+											zx = temp.x;
+											zy = temp.y;
+											board[zx][zy] = 16;
+											updateCells();
+
+											//Check if the game is over
+											if(is_game_over())
+											{
+												setTimeout(function(){
+													alert("Congrats!");
+												}, 2);
+											}
+										}
+
+									}
+
+									//Check if the game is over
+									function is_game_over()
+									{
+										var currentVal = 0;
+										for(var j=0; j&lt;cols; j++)
+										{
+											for(var i=0; i&lt;rows; i++)
+											{
+												if(board[i][j] &lt; currentVal)
+												{
+													return false;
+												}
+
+												currentVal = board[i][j];
+											}
+										}
+										return true;
+									}
+
+									//Shuffle the board
+									function shuffleBoard()
+									{
+										var shuffleLimit = 0;
+										var temp;
+
+										do
+										{
+											genPossibleMoves();
+
+											while(true)
+											{
+												// Pick a random cell of possible moves
+												temp = possibleMoves[Math.floor(Math.random() * possibleMoves.length)];
+												if (temp.x != oldzx || temp.y != oldzy)
+												{
+													break;
+												}
+											}
+
+											oldzx = zx;
+											oldzy = zy;
+
+											board[zx][zy] = board[temp.x][temp.y];
+											zx = temp.x;
+											zy = temp.y;
+											board[zx][zy] = 16;
+
+										}while(++shuffleLimit &lt; 200);
+									}
+
+									//REstart the game
+									function restart()
+									{
+										shuffleBoard();
+										updateCells();
+									}
+
+									//Start the game
+									function start()
+									{
+										generateBoard();
+										generateCells();
+										restart();
+									}
+								</code>
+							</pre>
+
+							<p>As I had mentioned above, today's article has nothing to do with Artificial Intelligence but in the future, I plan to write a solver for this game that makes use of Heuristics.</p>
+
+							<p>Hope you liked reading this article and have fun playing the game!</p>
+
+							<p>Stay tuned for more!</p>
+						</div>
+						<div class="article-footer">
+							<time>22nd June 2019</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Personal Challenge
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="article">
+						<div class="article-header">
+							<h1><a href="#">On learning new technologies</a></h1>
+							<p class="description">Sharing my tips on how I learn new technologies at work and home nowadays.</p>
+						</div>
+						<div class="article-body">
+							<p>If you're a programmer, you already know that it's quite a daunting task to keep up with the latest stream of technologies:</p>
+
+							<ul>
+							<li>Frameworks</li>
+							<li>Libraries</li>
+							<li>Programming Languages</li>
+							<li>Programming Paradigms</li>
+							</ul>
+
+							<p>And there's never an end to it, it's just an ever-growing thing.</p>
+
+							<p>So, whenever I'm walking or commuting, sometimes, these questions pop up in my head:</p>
+
+							<ol>
+							<li>How can I learn something new without wasting my free-time?</li>
+							<li>How can I learn all of the existing technologies out there? Is it possible?</li>
+							</ol>
+
+							<p>Well, it's technically impossible for me to know about everything — in and out. Computer Science is such a broad field and has a lot of branches and sub-branches.</p>
+
+							<p>However, you can learn a piece of technology just enough to know that it exists and know when to learn more about it when the time arises.</p>
+
+							<h2>Don't try to learn everything out there</h2>
+
+							<p>In my years of developing web applications, I have seen two types of programmers:</p>
+
+							<ol>
+							<li>One who has deep knowledge of a particular technology</li>
+							<li>An all-rounder but also not-so-deep knowledge about multiple technologies</li>
+							</ol>
+
+							<p>Where do I fall ? Personally, I feel that I belong to the latter kind because I believe that spending a lot of time trying to specialize or being an expert in one technology is just too time-consuming and given the fact that everyday there's a new framework or programming language released out there, it's better to put yourself in the middle ground.</p>
+
+							<p>Why you ask? Here's why:</p>
+
+							<ol>
+							<li>Technology dies fast. For example, there was a time when jQuery used to be really popular amongst the Front End Developers but today, most of them move towards libraries like ReactJS, VueJS and NextJS to build their projects and sooner or later, another framework will come out to replace ReactJS and become the next thing.</li>
+							<li>I don't think most of the technologies out there are relevant to the problem that you are trying to solve. Like why do I need to look into an API about geospatial analytics unless I'm trying to build an application that needs such a requirement, you get it right?</li>
+							</ol>
+
+							<p>Basically, trying to learn every single piece of technology out there, it's just basically wasting time.</p>
+
+							<h2>Ways and source of learning new stuff</h2>
+
+							<p>Whenever I wanted to learn a new programming language, I would often go to <a href="https://projecteuler.net">Project Euler</a> to flex my skills and that would help me learn more about it's features. Recently, I started <a href="https://leetcode.org">LeetCode</a> and <a href="#">Advent of Code - 2021</a>. It's quite interesting solving these challenges as it helps you to learn more about the technology and feels good after solving a problem.</p>
+
+							<p>The next thing I would recommend is following a tech news feed like <a href="https://news.ycombinator.com">Hacker News</a> but it can get quite addicting and distracting at times. Another good source of information are weekly newsletters. If you don't really know which one to follow, here's a <a href="https://github.com/zudochkin/awesome-newsletters">repository</a> filled with <strong>Awesome Newsletters</strong> that spans various areas like DevOps, Front end, Back end and Data Science. Try signing up on one of them and see how it goes.</p>
+
+							<h2>Time is costly, use it wisely</h2>
+
+							<p>The brain can only do so much in about 9 to 10 hours a day and in order for you to be efficient and productive in learning new stuff, try the following:</p>
+
+							<ol>
+							<li>Spend an hour learning, reading or practicing a new tool.</li>
+							<li>Interesting stuff but not needed yet? Try bookmarking or make a note of it, so that you can revisit it again.</li>
+							<li>If it fits your needs and project requirements, then go ahead and learn it!</li>
+							</ol>
+
+							<p>If you found this article useful, please share it with your friends and colleagues.</p>
+
+							<p>Stay tuned for more!</p>
+						</div>
+						<div class="article-footer">
+							<time>24th December 2021</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Productivity
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="article">
+						<div class="article-header">
+							<h1><a href="#">Understanding SPF, DKIM and DMARC protocols</a></h1>
+							<p class="description">An insight into the three main email security protocols that protects your email from malicious attackers.</p>
+						</div>
+						<div class="article-body">
+							<p>Today, email spam is one of the most common cyberattacks conducted by people with malicious intent intending to steal your passwords and personal credentials, leading users to phishing sites to steal bank account details, identity theft and so on.</p>
+
+							<p>Because of this, ISPs and email providers such as Gmail and Office 365 are taking anti-spam measures by enforcing stricter protocols in the type of emails that they receive, so it's good to implement those protocols and ensure that your email gets delivered and not delayed or worse, rejected by the mail servers.</p>
+
+							<h2>So, what are those protocols?</h2>
+
+							<p><a href="#spf-record">SPF</a>, <a href="#dkim-record">DKIM</a> and <a href="#dmarc-record">DMARC</a> are the three main secure protocols used to authenticate your mail server and this will prove the ISPs and other mail service providers that the mail being sent is legitimate and authorized.</p>
+
+							<h2><a id="spf-record"></a> What is SPF?</h2>
+
+							<p>It's an acronym for <strong>Sender Policy Framework</strong>. SPF is nothing but a DNS TXT record that specifies the server(s) and IP addresses that are allowed to send email from a specific domain.</p>
+
+							<p>Assuming you are the sender, just think of sending a postcard to your friend in which you add your address as well, so that your friend knows who the recipient is and he/she would most likely open it because they trust it.</p>
+
+							<p>But in technical terms, the actual recipient is not the user but rather the mail server that receives the mail.</p>
+
+							<h3>Create an SPF record</h3>
+
+							<p>An SPF record is a very simple string and it can be easily created. However, there are a few parts to it:</p>
+
+							<ol>
+								<li>Version of SPF used.</li>
+								<li>IP addresses that are authorized to send emails.</li>
+								<li>Third party domain(s) that are authorized to send emails.</li>
+								<li>An ending tag named "all" which tells the receiving server on what policy to apply if the sending server is not a part of the SPF record.</li>
+							</ol>
+
+							<p>So, let's what does it look like and what each part of it does:</p>
+
+							<pre>    <code class="txt hljs plaintext">
+								v=spf1 ip4:111.111.111.111 include:example-domain.com -all
+							</code>
+						</pre>
+
+						<p><code>v=spf1</code> states the SPF version being implemented. Currently, there's no any other version at this point. So, it should always stay as this version until another version is released.</p>
+
+						<p><code>ip4:111.111.111.111</code> is the IP address of the mail server/domain that's authorized to send emails for that domain. You can use multiple IP addresses and can be listed individually like this <code>ip4:111.111.111.111 ip4:222.222.222.222</code> or through a <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR</a> like <code>ip4:111.111.111.0/20</code>. If both IPv4 and IPv6 addresses are being used by mail server, make sure that both of those addresses are being listed.</p>
+
+						<p><code>include:example-domain.com</code> is a secondary domain that's authorized to send emails on behalf of the primary mail domain(s) listed. Just like the previous rule above, you can add multiple secondary domains but bear in mind that only a maximum of 10 domains are allowed for any sending domain.</p>
+
+						<p><code>-all</code> is a tag that instructs the receiving server on how to handle messages from a domain that isn't a part of the SPF record. There are some options and they are all dictated by a single character that precedes the <code>all</code> keyword. The options are:</p>
+
+						<ul>
+							<li><code>-all</code> means hard fail. The receiving server should reject the email if the sender domain is not authorized.</li>
+							<li><code>~all</code> means soft fail. The receiving server can flag it as a possible spam if the sender domain is not authorized. </li>
+							<li><code>+all</code> means authorized. The receiving server allows the email even if the sender domain is not authorized. Now, this is not recommended and please do not use this option.</li>
+						</ul>
+
+						<h2><a id="dkim-record"></a> What is DKIM?</h2>
+
+						<p>It's an acronym for <strong>DomainKeys Identified Mail</strong> a.k.a Email signing. Just like <a href="#spf-record">SPF</a>, DKIM is also a simple DNS TXT record that tells the receiving server that the mail is certified which allows to build a trust between both the sending and receiving servers.</p>
+
+						<p>To handle this trust, DKIM makes uses of an RSA cryptographic algorithm to create a pair of <strong>public</strong> and <strong>private</strong> encryption keys. The private key will remain on the server (i.e. the mail server) whereas the public key is placed in your DNS records.</p>
+
+						<h2>How to create a DKIM record?</h2>
+
+						<p>Depending on your mail provider, it can be easily generated by tools provided by them and once generated, it can be copy-pasted to the DNS records.</p>
+
+						<p>This is how a typical DKIM record would look like:</p>
+
+						<pre>    <code class="txt hljs plaintext">
+										v=DKIM1; k=rsa;
+										p=iHeFQ+7rCiSQs3DPjR2eUSZSv4i/Kp+sipRfVH7BGf+SxcwOkX7X8R1RVObMQsFcbIxnrq7Ba2QCf0YZlL9iqJf32V+baDI8IykuDztuoNUF2Kk0pawZkbSPNHYRtLxV2CTOtc+x4eIeSeYptaiu7g7GupekLZ2DE1ODHhuP4I=
+									</code>
+								</pre>
+
+								<p>Regardless of how it's being generated, this is what each part of the header means:</p>
+
+								<p><code>v=DKIM1</code> is the DKIM protocol version used.</p>
+
+								<p><code>p=</code> is the Base64 encoded public key generated.</p>
+
+								<p><code>k=</code> is the mechanism used to decode the DKIM signature. The encryption key is usually based on <code>rsa-sha1</code> or <code>rsa-sha256</code> signing algorithm.</p>
+
+								<p>You can use DMARC analyzer's <a href="https://dmarcanalyzer.com/dkim/dkim-checker">DKIM checker</a> to check if your DKIM record is valid.</p>
+
+								<h2><a id="dmarc-record"></a> What is DMARC?</h2>
+
+								<p>It's an acronym for <strong>Domain-based Message Authentication, Reporting and Conformance</strong>. This protocol is built around SPF and DKIM and it ensures the following:</p>
+
+								<ol>
+									<li>Verifies that the sender's email is protected by SPF and DKIM protocols.</li>
+									<li>Instructs the receiving mail server on what to do if the authentication fails.</li>
+									<li>Provides a way for the receiving server to send a report to the sender about the DMARC evaluation i.e. whether it passed or failed.</li>
+								</ol>
+
+								<p>If you have come this far in the article, you might have understood why both <a href="#spf-record">SPF</a> and <a href="#dkim-record">DKIM</a> were explained and why they are quite necessary.</p>
+
+								<h2>How to create a DMARC record?</h2>
+
+								<p>Once you have both SPF and DKIM records in place, then it's easy to create your DMARC record. There are many sites and I would recommend you to try MXToolbox's <a href="https://mxtoolbox.com/DMARCRecordGenerator.aspx">DMARC Record Generator</a>.</p>
+
+								<p>This is how a DMARC record would look like:</p>
+
+								<pre>    <code class="txt hljs plaintext">
+									v=DMARC1; p=none; fo=1; rua=mailto:address@example.com;
+								</code>
+							</pre>
+
+							<p>And here's what each part of the header translates to:</p>
+
+							<p><code>v</code> is the version tag, similar to the SPF record. It should always be <code>DMARC1</code> in the record.</p>
+
+							<p><code>p</code> is the policy tag. <code>none</code> means to not do anything to the email, <code>quarantine</code> means to flag it as spam and <code>reject</code> means to reject the email.</p>
+
+							<p><code>fo</code> is the tag that lets the receiving servers know that failed messages must be returned to the sender or not. There are four values for this tag:</p>
+
+							<ul>
+								<li><code>0</code>: Generate a report if both DKIM and SPF produce a "Pass" result.</li>
+								<li><code>1</code>: Generate a report if both DKIM and SPF produce a result other than "Pass".</li>
+								<li><code>d</code>: Generate a report if the email had failed the DKIM evaluation.</li>
+								<li><code>s</code>: Generate a report if the email had failed the SPF evaluation.</li>
+							</ul>
+
+							<p>It's actually recommended to use <code>fo=1</code> which can help you look for any email delivery issues.</p>
+
+							<p><code>rua</code> tells the receiving server on where to send the aggregate reports. This could provide insights into the health of the email server and can help identify any malicious activities.</p>
+
+							<p>There are many optional tags that can be used but these are the tags are most commonly used by default.</p>
+
+							<h2>Conclusion</h2>
+
+							<p>With the increase in spam emails, it's good to take such preventive measures to ensure that you are following best practices and doing your part to prevent malicious emails and other security related issues.</p>
+
+							<p>If you want to read more about these protocols, you can read the following links recommended below:</p>
+
+							<ul>
+								<li><a href="https://dmarcanalyzer.com/spf/">Sender Policy Framework (SPF)</a></li>
+								<li><a href="https://dkim.org">DomainKeys Identified Mail</a></li>
+								<li><a href="https://dmarc.org">Domain-based Message Authentication, Reporting and Conformance</a></li>
+							</ul>
+
+							<p>Hope you liked reading this article! 😄</p>
+						</div>
+						<div class="article-footer">
+							<time>10th April 2021</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Email
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Security
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="day article">
+						<h3><a href="#">8th June 2022</a> &mdash; Review</h3>
+						<ul>
+						  <li class="blogmark">
+						      <a href="https://ichard26.github.io/blog/2022/05/31/compiling-black-with-mypyc-part-1/">Compiling Black with mypyc</a> (<a href="https://twitter.com/llanga/status/1531741163539005449" title="Łukasz Langa">via</a>) <p>Richard Si is a Black contributor who recently obtained a 2x performance boost by compiling Black using the mypyc tool from the mypy project, which uses Python type annotations to generate a compiled C version of the Python logic. He wrote up this fantastic three-part series describing in detail how he achieved this, including plenty of tips on Python profiling and clever optimization tricks.</p>
+						  </li>
+						  <li class="blogmark">
+						      <a href="https://pradeepchhetri.xyz/clickhouselesserknownfeatures/#run-clickhouse-as-http-server-with-custom-static-and-dynamic-handlers">Lesser Known Features of ClickHouse</a> (<a href="https://news.ycombinator.com/item?id=31561780" title="Hacker News">via</a>) <p>I keep hearing positive noises about ClickHouse. I learned about a whole bunch of capabilities from this article—including that ClickHouse can directly query tables that are stored in SQLite or PostgreSQL.</p>
+						  </li>
+						  <li class="blogmark">
+						      <a href="https://dx.tips/the-end-of-localhost">The End of Localhost</a>. <p>swyx makes the argument for cloud-based development environments, and points out that many large companies—including Google, Facebook, Shopify and GitHub—have made the move already. I was responsible for the team maintaining the local development environment experience at Eventbrite for a while, and my conclusion is that with a large enough engineering team someone will ALWAYS find a new way to break their local environment: the idea of being able to bootstrap a fresh, guaranteed-to-work environment in the cloud at the click of a button could save SO much time and money. </p>
+						  </li>
+						</ul>
+					</div>
+					<div class="article">
+						<div class="article-header">
+							<h1><a href="#">Make your own generative pixel art in less than 100 lines of code</a></h1>
+							<p class="description">By modifying my old random pixel generator, I was able to generate a Space Invaders-esque pixel art.</p>
+						</div>
+						<div class="article-body">
+							<p><canvas id="myCanvas" width="500" height="302" style="border:0px solid #40514e;background-color: #e4f9f5;"></canvas></p>
+
+							<script defer type="text/javascript" src="https://megacolorboy.com/static/projects/invaders-sprites/script.js"></script>
+
+							<div class="post-notification success">
+								<h3>Try it out!</h3>
+								<p>Refresh the page to generate unique Space Invader-esque patterns as the results are unpredictable!</p>
+							</div>
+
+							<p>Generative art is a topic that still fascinates me because of the fact that you can produce something unique by just writing few (sometimes, more) lines of code. Especially, if it's self-generating art that makes use of fixed rules and a slight dash of randomness to produce unique results.</p>
+
+							<p>When it comes to writing code, it's quite straightforward. You come up with the rules and constraints and voila, you have something that works. Having said that, setting up rules for generative art can get quite tricky.</p>
+
+							<p>You might have read about my previous post about <a href="/writings/posts/the-game-of-life/">The Game of Life</a>, it contains only four rules and each of them took a part in evolving the system through each generation. With generative systems like that, you can never predict the results as complex patterns will emerge due to it's randomness.</p>
+
+							<p>In my view, a combination of predictability and randomness is needed in order to create a good looking generative art.</p>
+
+							<h2>Why you should explore it?</h2>
+
+							<p>There could be many reasons, maybe you're bored, curious or passionate to learn something new. Who knows? Open up your editor and try it for yourself.</p>
+
+							<p>Exploring the craft of making generative art has allowed me to:</p>
+
+							<ul>
+								<li>Gain different experiences &mdash; It allows you to sharpen your algorithms &amp; data structures and maybe even, learn a new technique.</li>
+								<li>Create something visually appealing &mdash; A picture is equal to a thousand words.</li>
+								<li>Instant results that makes you feel good &mdash; I mean, it's hard to explain but y'know what I mean, right?</li>
+							</ul>
+
+							<h2>Where to start?</h2>
+
+							<p>Just like any other project, you just need:</p>
+
+							<ul>
+								<li>An inspiration or an idea that you can work on.</li>
+								<li>The right kind of technology to use.</li>
+							</ul>
+
+							<p>With today's article, I'll be showing you how I built a Space Invader-esque pixel art generator in JavaScript that makes use of the Canvas API.</p>
+
+							<h2>Building a generator</h2>
+
+							<p>I'd like to give a shout out to the <a href="https://www.erdavids.com/">person</a> who built a twitterbot that generates random sprites using Python's Pillow image library.</p>
+
+							<p>I was inspired and I thought of writing it in JavaScript and as you can see above, it did turn out pretty well.</p>
+
+							<p>Here's the code for your reference and please read the comments to know how it functions:</p>
+
+							<pre>
+								<code class="javascript">
+									// To store any used colors
+									var colorStack = [];
+
+									// Selected color palette
+									var colors = [
+									'#30e3ca',
+									'#ff5a5f',
+									'#40514e',
+									'#e4f9f5',
+									'#40514e',
+									'#e4f9f5',
+									'#e4f9f5',
+									];
+
+									var canvas = document.getElementById("myCanvas");
+									var ctx = canvas.getContext('2d');
+
+									var width = canvas.width;
+									var height = canvas.height;
+
+									function createSquare(squareDimensions, color, element, spriteDim) {
+										const {squareX, squareY, squareWidth, squareHeight} = squareDimensions;
+
+										// If it's a middle element, apply a color
+										if (element == parseInt(spriteDim/2)) {
+											ctx.fillStyle = color;
+											ctx.fillRect(parseInt(squareX), parseInt(squareY), parseInt(squareWidth/squareX)+3, parseInt(squareHeight/squareY)+3);
+										}
+										// If it's the last element, then use the color that you saved previously
+										else if (colorStack.length == element + 1) {
+											ctx.fillStyle = colorStack.pop();
+											ctx.fillRect(parseInt(squareX), parseInt(squareY), parseInt(squareWidth/squareX)+3, parseInt(squareHeight/squareY)+3);  
+										}
+										// Else, apply a color and save this for the last element.
+										else {
+											colorStack.push(color);
+											ctx.fillStyle = color;
+											ctx.fillRect(parseInt(squareX), parseInt(squareY), parseInt(squareWidth/squareX)+3, parseInt(squareHeight/squareY)+3);      
+										}
+									}
+
+									function createInvader(invaderDimensions, spriteDim) { 
+
+										var {posX, posY, invaderWidth, invaderHeight} = invaderDimensions;
+										var squareSize = (invaderWidth - posX) / spriteDim;
+
+										var cellPosition = 1;
+										var element = 0;
+
+										for(var y=0; y&lt;spriteDim; y++){
+											/* 
+											Starts from the left side of the grid.
+											Think of it as something like this:
+											[-3,-2,-1,0,1,2,3]
+											*/
+											cellPosition *= -1;
+
+											// First element
+											element = 0;
+
+											for(var x=0; x&lt;spriteDim; x++) {
+												squareX = x * squareSize + posX;
+												squareY = y * squareSize + posY;
+												squareWidth = squareX + squareSize;
+												squareHeight = squareY + squareSize;
+
+												// Pick a random color from the color palette
+												var color = colors[Math.floor(Math.random() * colors.length)];
+
+												var squareDimensions = {
+													'squareX': squareX+2,
+													'squareY':squareY+2,
+													'squareWidth':squareWidth,
+													'squareHeight':squareHeight,
+												};
+
+												// Create a square with a color and desired dimensions.
+												createSquare(squareDimensions, color, element, spriteDim);
+
+												/*
+												If it's the middle element or the starting element, 
+												then shift it's position to the leftmost.
+												*/
+												if(element == parseInt(spriteDim/2) || element == 0) {
+													cellPosition *= -1;
+												}
+
+												element += cellPosition;
+											}
+										}
+									}
+
+									function main() {
+										var spriteDim = 7;
+										var numberOfInvaders = 15;
+										var invadersSize = parseInt(width / numberOfInvaders);
+										var padding = parseInt(invadersSize / spriteDim);
+
+										for(var x=0; x&lt;numberOfInvaders; x++) {
+											for(var y=0; y&lt;numberOfInvaders; y++) {
+												var posX = (x * invadersSize) + padding + 2;
+												var posY = (y * invadersSize) + padding + 2;
+												var invaderWidth = posX + invadersSize - (padding * 3);
+												var invaderHeight = posY + invadersSize - (padding * 3);
+
+												var invaderDimensions = {
+													'posX': posX,
+													'posY': posY,
+													'invaderWidth': invaderWidth,
+													'invaderHeight': invaderHeight
+												};
+
+												createInvader(invaderDimensions, spriteDim);
+											}
+										}   
+									}
+
+									main();
+								</code>
+							</pre>
+
+							<p>Well, I won't say that is a perfect solution but hey, it works and yes, it doesn't take a lot of code to achieve something like this.</p>
+
+							<h2>Explanation</h2>
+
+							<p>I'll try my best to explain how this whole thing works.</p>
+
+							<p>First, you need to initialize a <code>&lt;canvas&gt;</code> DOM element of the desired width and height. Then in the <code>main()</code> function, you determine the size of each invader by specifying the number of invaders and dividing it with the width of the canvas. These values will then be used to determine the coordinates for each invader.</p>
+
+							<p>Second, the function <code>createInvader()</code> follows nearly the same process as the <code>main</code> function except that the coordinates for each pixel is determined by calculating the width of the invader and subtracting it's <code>x</code> position divided by the dimensions of each invader.</p>
+
+							<p>Third, as you can see in the function <code>createSquare()</code>, it contains 3 simple rules in which all of them draws a square with a color but with an emphasis that each invader has a symmetrical pattern.</p>
+
+							<p>The code looks deceptively simple but achieving this complexity did take a lot of trial and error and a little bit of simple calculus &#x1F602;.</p>
+
+							<h2>Conclusion</h2>
+
+							<p>Generative art might be something that you may not need to explore but it's quite fun and you may never know what you might be able to produce by combining both code and visuals.</p>
+
+							<p>Hope you liked reading this article.</p>
+
+							<p>Stay tuned for more! &#x1F918;</p>
+						</div>
+						<div class="article-footer">
+							<time>05th March 2021</time>
+							<ul class="tags">
+								<li>
+									<a href="#">
+										Generative Art
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										JavaScript
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+				  <a href="#">&laquo;</a>
+				  <a href="#">1</a>
+				  <a class="active" href="#">2</a>
+				  <a href="#">3</a>
+				  <a href="#">4</a>
+				  <a href="#">5</a>
+				  <a href="#">6</a>
+				  <a href="#">7</a>
+				  <a href="#">&raquo;</a>
+				</div>
+			</section>
+			<!-- 
+				Contains blog links that I follow 
+				Bookmarks
+				Interesting quotes/content
+			-->
+			<section id="secondary">
+				
+				<div class="sidebar">
+					<div class="author-intro">
+						<h3>Hello, I'm Abdush Shakoor! &#x1F44B;</h3>
+						<p>I'm a programmer & designer based in Dubai, United Arab Emirates. I love tinkering with code and writing about what I learn.</p>
+						<p>This website is my digital garden &mdash; a compendium of the things I've learned and created over the years.</p>
+/
+						<ul class="sitemap">
+							<li><a href="#">Email</a></li>
+							<li><a href="#">GitHub</a></li>
+							<li><a href="#">LinkedIn</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+					</div>
+
+					<!-- Search bar -->
+					<div class="search-bar">
+						<input type="text" placeholder="🔍 Search for anything here..." />
+						<button type="submit">Search</button>
+					</div>
+					<!-- Search bar -->	
+
+					<!-- Tags -->
+					<div>
+						<!-- <h3>Tags</h3> -->
+						<ul class="tags">
+							<li>
+								<a href="#">
+									DevOps
+									<span class="count">10</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Programming
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Linux
+									<span class="count">12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Productivity
+									<span class="count">2</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									VIM
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									VSCode
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									MySQL
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Git
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Unix
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									PHP
+									<span class="count">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Laravel
+									<span class="count">5</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Tags -->	
+				</div>
+			</section>
+		</div>
+
+		
+	</main>
+
+	<script>
+
+		function injectStyle() {
+			s = `<style>
+				.tiles-wall {
+				    border-radius: 4px;
+				    display: grid;
+				    width: 500px;
+				    grid-template-columns: repeat(10, 50px);
+				    grid-template-rows: repeat(5, 50px);
+				    margin: 20px 0;
+				    overflow: hidden;
+				}
+
+				.tiles-wall div {
+					width: 50px;
+					height: 50px;
+				}
+
+				/* STYLES  */
+				.circle {
+				}
+				div[class*="circle-"] {
+					background-size: 200% 200% !important;
+				}
+				.circle-up {
+					background-position: bottom !important;
+				}
+				.circle-right {
+					background-position: left !important;
+				}
+				.circle-down {
+					background-position: top !important;
+				}
+				.circle-left {
+					background-position: right !important;
+				}
+				.triangle-up, .triangle-down {
+				}
+			</style>`;
+			document.head.insertAdjacentHTML("beforeend", s);
+		}
+
+		function injectGenerativeArtIntoArticles() {
+			var articles = document.querySelectorAll(".article");
+			articles.forEach(function(el, idx){
+				x = el.querySelector('iframe') || el.querySelector('canvas');
+				// Inject .tilesWall after description
+				if(!x) {
+					container = document.createElement('div');
+					container.classList.add('tiles-wall');
+					articleHeader = el.querySelector('.article-header > .description')
+					if(articleHeader) {
+						articleHeader.appendChild(container);	
+					}
+				}
+			})
+			
+		}
+
+		function init() {
+			injectStyle();
+			injectGenerativeArtIntoArticles();
+			generateTiles();
+		}
+
+		document.onload = init();
+
+		function generateTiles() {
+			// reset the HTML
+			var tilesWall = document.querySelectorAll(".tiles-wall");
+			// tilesWall.innerHTML = "";
+			
+			// variables
+			const colorPalettes = [
+				["#E8C547", "#30323D", "#4D5061", "#5C80BC", "#CDD1C4"],
+				["#3B429F", "#AA7DCE", "#F5D7E3", "#F4A5AE", "#A8577E"],
+				["#DE9151", "#F34213", "#2E2E3A", "#BC5D2E", "#BBB8B2"],
+				["#F1E4E8", "#E2DCDE", "#CEB1BE", "#B97375", "#2D2D34"],
+				["#002A32", "#C4A29E", "#EBA6A9", "#FFC6AC", "#F40076"],
+				["#1446A0", "#DB3069", "#F5D547", "#EBEBD3", "#3C3C3B"],
+				["#D6FFF6", "#231651", "#4DCCBD", "#2374AB", "#FF8484"],
+				["#1C1D21", "#A288A6", "#BB9BB0", "#CCBCBC", "#F1E3E4"],
+				["#FCFCFC", "#F7567C", "#FFFAE3", "#99E1D9", "#5D576B"]
+			];
+			
+			const styles = [
+				"circle-up",
+				"circle-right",
+				"circle-down",
+				"circle-left",
+				"circle",
+				"triangle-up",
+				"triangle-down"
+			];
+			
+			tilesWall.forEach(function(item, idx){
+				var colors = colorPalettes[generateRandomNumber(0, colorPalettes.length - 1)];
+				// populate the HTML with classes/styles
+				for (r = 1; r <= 50; r++) {
+					const gridItem = document.createElement("div");
+					const selectedStyle = `${styles[generateRandomNumber(0, styles.length - 1)]}`;
+					gridItem.setAttribute("class", selectedStyle);
+					var gradientType = "";
+					var gradientDeg = "";
+					var p1 = "";
+
+					switch(selectedStyle) {
+						case "triangle-up":
+							gradientType = "linear-gradient";
+							gradientDeg = "225deg";
+							p1 = "50%";
+							p2 = "51%";
+							break;
+						case "triangle-down":
+							gradientType = "linear-gradient";
+							gradientDeg = "315deg";
+							p1 = "50%";
+							p2 = "51%";
+							break;
+						default:
+							gradientType = "radial-gradient";
+							gradientDeg = "circle";
+							p1 = "35%";
+							p2 = "36%";
+							break;
+					}
+
+					gridItem.style.background = `${gradientType}(${gradientDeg},  ${
+						colors[generateRandomNumber(0, colors.length - 1)]
+					} ${p1}, ${colors[generateRandomNumber(0, colors.length - 1)]} ${p2})`;
+
+					item.appendChild(gridItem);
+				}
+			});
+
+			
+		}
+
+		// HELPER FUNCTIONS utils.js
+		// generate random number between min and max
+		function generateRandomNumber(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+	</script>
+
+	<footer>
+		<span class="copyright">&copy; Abdush Shakoor</span>
+	</footer>
+</body>
+</html>

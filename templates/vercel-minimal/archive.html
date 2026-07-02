@@ -1,0 +1,32 @@
+{% include 'partials/header.html' %}
+
+<main class="page-shell page-shell-archive">
+    <section class="page-intro">
+        <p class="eyebrow">Index</p>
+        <h1>{{ page.title }}</h1>
+        <p class="lede">{{ page.description }}</p>
+    </section>
+
+    <section class="archive-list" aria-label="Archive posts">
+        {% for post_group in posts %}
+            <section class="archive-year">
+                <header>
+                    <h2>{{ post_group[0].year }}</h2>
+                </header>
+                <div class="archive-items">
+                    {% for post in post_group %}
+                        <article class="archive-item">
+                            <div>
+                                <a href="/{{ post.link }}">{{ post.title }}</a>
+                                <p>{{ post.summary }}</p>
+                            </div>
+                            <time datetime="{{ post.date_raw }}">{{ post.date_alt }}</time>
+                        </article>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endfor %}
+    </section>
+</main>
+
+{% include 'partials/footer.html' %}

@@ -1,0 +1,29 @@
+<article class="post-full">
+    <header class="post-full__header">
+        <a class="back-link" href="/{{ content_directory }}/">Back to {{ content_directory | replace('-', ' ') | title }}</a>
+        <div class="post-card__meta">
+            <span>{{ post.section | replace('-', ' ') | title }}</span>
+            <span class="dot"></span>
+            <time datetime="{{ post.date_raw }}">{{ post.date }}</time>
+            {% if post.reading_time %}
+                <span class="dot"></span>
+                <span>{{ post.reading_time }}</span>
+            {% endif %}
+        </div>
+        <h1>{{ post.title }}</h1>
+        {% if post.summary %}
+            <p class="post-full__summary">{{ post.summary }}</p>
+        {% endif %}
+        {% if post.categories %}
+            <ul class="chip-list chip-list-inline">
+                {% for category in post.categories %}
+                    <li><a href="{{ category.link }}">{{ category.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </header>
+
+    <div class="post-full__content article-body">
+        {{ post.content }}
+    </div>
+</article>

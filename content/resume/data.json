@@ -1,0 +1,179 @@
+{
+	"basics": {
+		"phone_number": {
+			"display": "+971 50 2789 216",
+			"href": "00971502789216"
+		},
+
+		"email_address": {
+			"display": "abdushshakoor1992@hotmail.com",
+			"href": "mailto:abdushshakoor1992@hotmail.com"
+		},
+
+		"github_url": {
+			"display": "github.com/megacolorboy",
+			"href": "https://github.com/megacolorboy"
+		},
+
+		"website_url": {
+			"display": "megacolorboy.com",
+			"href": "https://megacolorboy.com"
+		}
+	},
+	
+	"experience": [
+		{
+			"role": "Back End Developer",
+			"company_name": "Planet Green Solutions",
+			"location": "Dubai, UAE",
+			"date_from": "01/20",
+			"date_to": "Ongoing",
+			"description": "",
+			"bullets": [
+				"Writing server-side code, developing APIs, Linux server administration & code deployments.",
+				"Currently working with various government entities such as Ministry of Cabinet Affairs, Ministry of Culture & Youth, Prime Minister's Office & etc.",
+				"Opportunities to work on projects with different challenges & complexities.",
+				"Collaborating with UI/UX, Project Management & Stakeholders to improve project features."
+			]
+		},
+		{
+			"role": "Web/Software Developer",
+			"company_name": "Key Information Technology",
+			"location": "Dubai, UAE",
+			"date_from": "11/16",
+			"date_to": "10/19",
+			"description": "",
+			"bullets": [
+				"Wrote backend & frontend code for the company's website.",
+                "Built custom tools for HR, Projects & Marketing team.",
+                "Learnt to write reusable UI components.",
+                "Mentored & trained 3 interns."
+			]
+		},
+		{
+			"role": "Summer Intern",
+			"company_name": "Oracle Corporation",
+			"location": "Dubai, UAE",
+			"date_from": "08/16",
+			"date_to": "08/16",
+			"description": "A small-time internship where I learnt about developing analytical reports & concepts of Cloud Computing."
+		},
+		{
+			"role": "Software Engineering Intern",
+			"company_name": "Aufait Systems",
+			"location": "Dubai, UAE",
+			"date_from": "02/16",
+			"date_to": "04/16",
+			"description": "Built Android apps in Java, developed REST APIs & Admin Panels."
+		},
+		{
+			"role": "Web Development Intern",
+			"company_name": "Tradeasia International",
+			"location": "Dubai, UAE",
+			"date_from": "09/15",
+			"date_to": "11/15",
+			"description": "This internship was mainly focused on migrating their existing codebase from PHP to Java."
+		}
+	],
+
+	"projects": [
+		{
+			"name": "Static Site Generator",
+			"description": "Custom-tailored static site generator for my blog & resume.",
+			"tags": [
+				"Python",
+				"Jinja2",
+				"Markdown"
+			]
+		},
+		{
+			"name": "Space Invaders Generator",
+			"description": "Generates random & beautiful Space Invaders-esque patterns.",
+			"tags": [
+				"JavaScript",
+				"Canvas"
+			]
+		},
+		{
+			"name": "Toy Crypto Library",
+			"description": "Wrote a library to solve The Cryptopals Crypto Challenges.",
+			"tags": [
+				"Python",
+				"C/C++"
+			]
+		},
+		{
+			"name": "Mini-games",
+			"description": "Built clones of 2048, Tetris, Pong, Minesweeper & much more.",
+			"tags": [
+				"JavaScript",
+				"Canvas"
+			]
+		}
+	],
+
+	"skills": [
+		"Problem Solving",
+		"UI Design",
+		"Teamwork",
+		"Adaptable",
+		"Quick Learning",
+		"Agile",
+		"Good at Googling",
+		"Works well under pressure"
+	],
+
+	"tech_professional": [
+		"PHP",
+		"MySQL",
+        "SQL",
+		"Laravel",
+		"JavaScript",
+		"Bash",
+		"HTML",
+		"CSS",
+		"SCSS",
+		"AWS",
+		"Apache",
+		"Nginx",
+		"CentOS",
+		"Ubuntu",
+		"jQuery",
+		"Git"
+	],
+
+	"tech_hobbyist": [
+		"Python",
+		"C/C++",
+		"WebGL",
+		"Golang",
+		"Jupyter",
+		"Markdown",
+		"Jinja2",
+		"ReactJS",
+		"Canvas"
+	],
+
+	"tools": [],
+
+	"interests": [
+		"CTFs",
+		"Data Science",
+		"AI/ML",
+		"Computer Graphics",
+		"Generative Art",
+		"Linux Administration",
+		"Mathematics"
+	],
+
+	"education": [
+		{
+			"certification": "B. Computer Science",
+			"institute_name": "University of Wollongong",
+			"location": "Dubai, UAE",
+			"date_from": "09/11",
+			"date_to": "10/16",
+			"description": "Won the People's Choice Award for the Capstone Project in Summer 2015."
+		}
+	]
+}

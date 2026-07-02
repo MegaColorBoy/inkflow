@@ -1,0 +1,25 @@
+<article class="post-card">
+    <div class="post-card__meta">
+        <span>{{ post.section | replace('-', ' ') | title }}</span>
+        <span class="dot"></span>
+        <time datetime="{{ post.date_raw }}">{{ post.date }}</time>
+        {% if post.reading_time %}
+            <span class="dot"></span>
+            <span>{{ post.reading_time }}</span>
+        {% endif %}
+    </div>
+
+    <h2><a href="/{{ post.link }}">{{ post.title }}</a></h2>
+
+    {% if post.summary %}
+        <p class="post-card__summary">{{ post.summary }}</p>
+    {% endif %}
+
+    {% if post.categories %}
+        <ul class="chip-list chip-list-inline">
+            {% for category in post.categories[:3] %}
+                <li><a href="{{ category.link }}">{{ category.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</article>

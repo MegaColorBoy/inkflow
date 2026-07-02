@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tiles Art</title>
+	<style>
+		*,
+		::before,
+		::after {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+			text-align: center;
+		}
+		:root {
+			/*font-size: calc(0.8em + 1vw);*/
+		}
+		body {
+			height: 100vh;
+			display: grid;
+			justify-items: center;
+			align-items: center;
+		}
+
+		.tiles-wall {
+		    border-radius: 4px;
+		    display: grid;
+		    width: 500px;
+		    height: 280px;
+		    grid-template-columns: repeat(10, 1fr);
+		    grid-template-rows: repeat(5, 1fr);
+		    margin: 20px 0;
+		    overflow: hidden;
+		}
+
+		.tiles-wall div {
+			width: 3.5rem;
+			height: 3.5rem;
+		}
+
+		/* STYLES  */
+		.circle {
+			/* only one line of CSS, determined by JS*/
+		}
+		div[class*="circle-"] {
+			background-size: 200% 200% !important;
+		}
+		.circle-up {
+			background-position: bottom !important;
+		}
+		.circle-right {
+			background-position: left !important;
+		}
+		.circle-down {
+			background-position: top !important;
+		}
+		.circle-left {
+			background-position: right !important;
+		}
+		.triangle-up {
+			/* only one line of CSS, determined by JS*/
+		}
+		.triangle-down {
+			/* only one line of CSS, determined by JS*/
+		}
+	</style>
+</head>
+<body>
+	<figure>
+		<div class="tiles-wall"></div>
+		<div class="tiles-wall"></div>
+		<div class="tiles-wall"></div>
+		<div class="tiles-wall"></div>
+	</figure>
+	<script>
+		function generateTiles() {
+			// reset the HTML
+			var tilesWall = document.querySelectorAll(".tiles-wall");
+			// tilesWall.innerHTML = "";
+			
+			// variables
+			const colorPalettes = [
+				["#E8C547", "#30323D", "#4D5061", "#5C80BC", "#CDD1C4"],
+				["#3B429F", "#AA7DCE", "#F5D7E3", "#F4A5AE", "#A8577E"],
+				["#DE9151", "#F34213", "#2E2E3A", "#BC5D2E", "#BBB8B2"],
+				["#F1E4E8", "#E2DCDE", "#CEB1BE", "#B97375", "#2D2D34"],
+				["#002A32", "#C4A29E", "#EBA6A9", "#FFC6AC", "#F40076"],
+				["#1446A0", "#DB3069", "#F5D547", "#EBEBD3", "#3C3C3B"],
+				["#D6FFF6", "#231651", "#4DCCBD", "#2374AB", "#FF8484"],
+				["#1C1D21", "#A288A6", "#BB9BB0", "#CCBCBC", "#F1E3E4"],
+				["#FCFCFC", "#F7567C", "#FFFAE3", "#99E1D9", "#5D576B"]
+			];
+			
+			const styles = [
+				"circle-up",
+				"circle-right",
+				"circle-down",
+				"circle-left",
+				"circle",
+				"triangle-up",
+				"triangle-down"
+			];
+			
+			tilesWall.forEach(function(item, idx){
+				var colors = colorPalettes[generateRandomNumber(0, colorPalettes.length - 1)];
+				// populate the HTML with classes/styles
+				for (r = 1; r <= 50; r++) {
+					const gridItem = document.createElement("div");
+					const selectedStyle = `${styles[generateRandomNumber(0, styles.length - 1)]}`;
+					gridItem.setAttribute("class", selectedStyle);
+					if (selectedStyle === "triangle-up") {
+						gridItem.style.background = `linear-gradient(225deg,  ${
+							colors[generateRandomNumber(0, colors.length - 1)]
+						} 50%, ${colors[generateRandomNumber(0, colors.length - 1)]} 50%)`;
+					} else if (selectedStyle === "triangle-down") {
+						gridItem.style.background = `linear-gradient(315deg, ${
+							colors[generateRandomNumber(0, colors.length - 1)]
+						} 50%, ${colors[generateRandomNumber(0, colors.length - 1)]} 50%)`;
+					} else {
+						gridItem.style.background = `radial-gradient(circle, ${
+							colors[generateRandomNumber(0, colors.length - 1)]
+						} 35%, ${colors[generateRandomNumber(0, colors.length - 1)]} 35%)`;
+					}
+					item.appendChild(gridItem);
+				}
+			});
+
+			
+		}
+		document.onload = generateTiles();
+		// document.getElementsByTagName("button")[0].onclick = function () {
+		// 	generateTiles();
+		// };
+		// document.getElementById("tilesWall").onclick = function () {
+		// 	generateTiles();
+		// };
+		// HELPER FUNCTIONS utils.js
+		// generate random number between min and max
+		function generateRandomNumber(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+	</script>
+</body>
+</html>

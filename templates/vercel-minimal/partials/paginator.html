@@ -1,0 +1,21 @@
+{% if pagination == True %}
+<nav class="pagination" aria-label="Pagination">
+    {% if curr != 1 %}
+        <a class="pagination__control" href="{{ prev_url }}">Previous</a>
+    {% endif %}
+
+    <div class="pagination__pages">
+        {% for link in pagination_links %}
+            {% if link.has_dots %}
+                <a class="pagination__page {{ 'is-active' if curr == link.page else '' }}" href="{{ link.url }}">...</a>
+            {% else %}
+                <a class="pagination__page {{ 'is-active' if curr == link.page else '' }}" href="{{ link.url }}">{{ link.page }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if curr != total %}
+        <a class="pagination__control" href="{{ next_url }}">Next</a>
+    {% endif %}
+</nav>
+{% endif %}

@@ -1,0 +1,21 @@
+{% set site_meta = site if site is defined else site_dict %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{ site_meta.author }}">
+    {% if generate_meta %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title }} | {{ site_meta.name }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url if page.url is defined else site_meta.url }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:site_name" content="{{ site_meta.name }}">
+    {% endif %}
+    <meta name="robots" content="follow">
+    <title>{{ page.title }} | {{ site_meta.name }}</title>
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+</head>
+<body class="{{ body_class }}">
+    {% include 'partials/navbar.html' %}

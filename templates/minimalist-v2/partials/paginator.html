@@ -1,0 +1,19 @@
+{% if pagination == True %}
+<div class="pagination">
+	{% if curr != 1 %}
+		<a href="{{ prev_url }}">&laquo;</a>
+	{% endif %}
+
+	{% for link in pagination_links %}
+		{% if link.has_dots %}
+			<a class="{{ 'active' if curr == link.page else '' }}" href="{{ link.url }}">...</a>
+		{% else %}
+			<a class="{{ 'active' if curr == link.page else '' }}" href="{{ link.url }}">{{ link.page }}</a>
+		{% endif %}
+	{% endfor %}
+
+	{% if curr != total %}
+		<a href="{{ next_url }}">&raquo;</a>
+	{% endif %}
+</div>
+{% endif %}

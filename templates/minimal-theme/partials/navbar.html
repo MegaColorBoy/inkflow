@@ -1,0 +1,16 @@
+<header class="header">
+	<div class="author">
+		<a href="/">
+			<div class="logo" style="background-image: url('https://megacolorboy.com/static/logo.gif');"></div>
+			<p>megacolorboy</p>
+		</a>
+	</div>
+	<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+	<nav>
+		<ul class="menu">
+			{% for item in menu %}
+				<li><a href="{{ item.link }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

@@ -1,0 +1,33 @@
+{% include 'partials/header.html' %}
+
+<main>
+	<section class="article-head">
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.description }}</p>
+	</section>
+
+    {% for postGroup in posts %}
+	<section class="section">
+		<div class="column">
+			<div class="title">
+				<h2><a href="#">{{ postGroup[0].year }}</a></h2>
+			</div>
+			<ul class="listing">
+				{% for post in postGroup %}
+				<li>
+					<p class="cat">{{ post.category }}</p>
+					<h4><a href="posts/{{ post.slug }}">{{ post.title }}</a></h4>
+					<p class="date">{{ post.dateAlt }} <span>•</span> {{ post.readingTime }}</p>
+					{% if post.summary|length > 1 %}
+						<p class="desc">{{ post.summary }}</p>
+					{% endif %}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+	{% endfor %}
+
+</main>
+
+{% include 'partials/footer.html' %}

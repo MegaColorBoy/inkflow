@@ -1,0 +1,46 @@
+{% include 'partials/header.html' %}
+
+<main>
+	<section class="article-head">
+		<h1>Hey there,<br/>I'm Abdush Shakoor.</h1>
+		<p>A not-so-typical software engineer & designer with a knack for problem solving and building stuff for fun.</p>
+	</section>
+
+	<section class="section">
+		<div class="column">
+			<div class="title">
+				<h2><a href="/writings">Writings <span>&rarr;</span></a></h2>
+			</div>
+			<ul class="listing">
+				{% for post in sections.writings %}
+				<li>
+					<p class="cat">{{ post.category }}</p>
+					<h4><a href="{{ post.link }}">{{ post.title }}</a></h4>
+					<p class="date">{{ post.dateAlt }} <span>•</span> {{ post.readingTime }}</p>
+					<p class="desc">{{ post.summary }}</p>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="column">
+			<div class="title">
+				<h2><a href="/til">Today I Learned <span>&rarr;</span></a></h2>
+			</div>
+			<ul class="listing">
+				{% for post in sections.til %}
+				<li>
+					<p class="cat">{{ post.category }}</p>
+					<h4><a href="{{ post.link }}">{{ post.title }}</a></h4>
+					<p class="date">{{ post.dateAlt }} <span>•</span> {{ post.readingTime }}</p>
+					<p class="desc">{{ post.summary }}</p>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+</main>
+
+{% include 'partials/footer.html' %}

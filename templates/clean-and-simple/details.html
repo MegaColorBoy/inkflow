@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <title>Abdush Shakoor</title>
+</head>
+<body>
+	
+    <header class="author-head main alt">
+		<div class="logo"></div>
+		<div class="content">
+			<div class="title">
+				<h1>Abdush Shakoor</h1>
+				<p>Posted on 29th of December, 2020</p>
+			</div>
+			<nav class="links">
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">TIL</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Resume</a></li>
+				</ul>
+			</nav>	
+		</div>
+	</header>
+
+    <article class="article-wrapper">
+        <div class="article-intro">
+            <h1 class="title">Do we really need to use pointers?</h1>
+            <p class="summary">Did a little digging on whether it's useful to make use of pointers in your application</p>    
+        </div>
+        <div class="content">
+            <div class="content-html">
+                <p>The topic about pointers isn't new as you're probably introduced to this concept in your first computer science class. I started learning Go and once again, I came across the concept of using Pointers and wanted to finally understand, why are they used and do we really need to use it?</p>
+
+                <p>Frankly, I don't really remember using pointers when I was developing web applications in PHP and JavaScript but it was quite a refresher to get back on track again.</p>
+
+                <h2>Well, what is a pointer?</h2>
+
+                <p>In it's basic form, a pointer is a variable that contains the memory address of another variable.</p>
+
+                <p>For example, you have a variable named <mark>x</mark> that contains some data, in this case, we'll store an integer:</p>
+
+                <pre>    <code class="go hljs css">
+                    <span class="hljs-selector-tag">package</span> <span class="hljs-selector-tag">main</span>
+
+                    <span class="hljs-selector-tag">import</span> "<span class="hljs-selector-tag">fmt</span>"
+
+                    <span class="hljs-selector-tag">func</span> <span class="hljs-selector-tag">main</span>() {
+                    <span class="hljs-attribute">x </span>:= <span class="hljs-number">10</span>
+                    fmt.<span class="hljs-built_in">Println</span>(x) // prints <span class="hljs-number">10</span>
+                }
+            </code>
+        </pre>
+
+        <p>The code above prints the variable <mark>x</mark> by referring to it's name. We can do the same using pointers by referring to it's memory address via another variable that points to variable <mark>x</mark>.</p>
+
+        <p>To do this, we must use <mark>&amp;</mark> operator to get the address and <mark>*</mark> to return the value stored in the address of variable <mark>x</mark> like this:</p>
+
+        <pre>    <code class="go hljs css">
+            <span class="hljs-selector-tag">package</span> <span class="hljs-selector-tag">main</span>
+
+            <span class="hljs-selector-tag">import</span> "<span class="hljs-selector-tag">fmt</span>"
+
+            <span class="hljs-selector-tag">func</span> <span class="hljs-selector-tag">main</span>() {
+            <span class="hljs-attribute">x </span>:= <span class="hljs-number">10</span>
+            p := &amp;x
+            fmt.<span class="hljs-built_in">Println</span>(x)   // prints <span class="hljs-number">10</span>
+            fmt.<span class="hljs-built_in">Println</span>(*p)  // also, prints <span class="hljs-number">10</span>
+        }
+    </code>
+</pre>
+
+<p>Hmm, that was pretty straight forward.</p>
+
+<h2>So, why was it created?</h2>
+
+<p>In the modern era, most high-level programming languages are capable of handling memory allocation (like <strong>Java</strong> or <strong>C#</strong>), automatically.</p>
+
+<p>But when <strong>C</strong> was developed, computers weren't as powerful as today but that also meant the programmers must create systems that made use of memory and speed, efficiently. Which is why some tasks do require it when programming low-level embedded systems or microcontrollers.</p>
+
+<h2>Why use them?</h2>
+
+<p>Whenever you pass a variable to a function, you're basically creating a copy of the variable. But if you're using pointers, you just have to pass the address of the variable and in most cases, a pointer is much smaller in size than the value being pointed at.</p>
+
+<p>It allows you share data and it's quite appropriate when it comes to modifying the data being passed to it.</p>
+
+<p>To some extent, it might seem efficient but there are some tradeoffs, when you're going to talk about optimization.</p>
+
+<h2>Do pointers really optimize your application?</h2>
+
+<p>I was thinking if pointers are used to optimize applications, I mean, you don't have to duplicate data and it saves memory, so why not?</p>
+
+<p>Turns out that there are a few points that I came across:</p>
+
+<ol>
+    <li>Accessing values can use up memory though not so much but it can add up.</li>
+    <li>Data will be placed on top of heap stack which increases the memory overhead and can be cleaned up the garbage collector.</li>
+</ol>
+
+<p>Most programmers tend to avoid using it in order to make their codebase less complex and reduce the increased work for the garbage collector.</p>
+
+<p>Apart from that, there are some concerns when it comes to the security of the application implying that it could be unsafe when using pointers.</p>
+
+<h2>Takeaway</h2>
+
+<p>Pointers are useful but don't think of using it, blindly, by assuming that it might give you a boost in performance.</p>
+
+<p>Hope you found this article useful!</p>
+
+<h2>Readings</h2>
+
+<ul>
+    <li><a href="http://duramecho.com/ComputerInformation/WhyCPointers.html">Why C has pointers?</a></li>
+    <li><a href="https://www.quora.com/Why-dont-we-use-pointers-in-Java-but-we-use-them-in-C-and-C++">Why do we use pointers in Java but we use them in C and C++</a></li>
+</ul>
+
+                </div>
+        </div>
+    </article>
+</body>
+</html>

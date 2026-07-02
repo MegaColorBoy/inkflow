@@ -1,0 +1,90 @@
+{% include 'partials/header.html' %}
+
+<main class="page-shell resume-shell">
+    <section class="page-intro">
+        <p class="eyebrow">Resume</p>
+        <h1>{{ page.title }}</h1>
+        <p class="lede">{{ page.description }}</p>
+    </section>
+
+    <section class="resume-grid">
+        <article class="resume-panel resume-hero">
+            <h2>{{ site.author }}</h2>
+            <ul class="contact-list">
+                <li><a href="{{ data.basics.email_address.href }}">{{ data.basics.email_address.display }}</a></li>
+                <li><a href="tel:{{ data.basics.phone_number.href }}">{{ data.basics.phone_number.display }}</a></li>
+                <li><a href="{{ data.basics.website_url.href }}">{{ data.basics.website_url.display }}</a></li>
+                <li><a href="{{ data.basics.github_url.href }}">{{ data.basics.github_url.display }}</a></li>
+            </ul>
+        </article>
+
+        <article class="resume-panel">
+            <h2>Experience</h2>
+            {% for item in data.experience %}
+                <section class="resume-block">
+                    <div class="resume-heading">
+                        <h3>{{ item.role }}</h3>
+                        <p>{{ item.company_name }} - {{ item.location }}</p>
+                        <span>{{ item.date_from }} - {{ item.date_to }}</span>
+                    </div>
+                    <ul>
+                        {% for bullet in item.bullets %}
+                            <li>{{ bullet }}</li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endfor %}
+        </article>
+
+        <article class="resume-panel">
+            <h2>Projects</h2>
+            {% for project in data.projects %}
+                <section class="resume-block">
+                    <h3>{{ project.name }}</h3>
+                    <p>{{ project.description }}</p>
+                    <ul class="chip-list">
+                        {% for tag in project.tags %}
+                            <li>{{ tag }}</li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endfor %}
+        </article>
+
+        <article class="resume-panel">
+            <h2>Professional stack</h2>
+            <ul class="chip-list">
+                {% for item in data.tech_professional %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+
+        <article class="resume-panel">
+            <h2>Hobby stack</h2>
+            <ul class="chip-list">
+                {% for item in data.tech_hobbyist %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+
+        <article class="resume-panel">
+            <h2>Education</h2>
+            {% for item in data.education %}
+                <section class="resume-block">
+                    <h3>{{ item.certification }}</h3>
+                    <p>{{ item.institute_name }} - {{ item.location }}</p>
+                    <span>{{ item.date_from }} - {{ item.date_to }}</span>
+                    <ul>
+                        {% for bullet in item.bullets %}
+                            <li>{{ bullet }}</li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endfor %}
+        </article>
+    </section>
+</main>
+
+{% include 'partials/footer.html' %}

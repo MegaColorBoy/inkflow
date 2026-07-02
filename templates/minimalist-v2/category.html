@@ -1,0 +1,30 @@
+{% include 'partials/header.html' %}
+
+<main>
+	<div class="two-col-grid">
+		<section id="primary">
+			<div class="articles">
+				{% for post_group in posts %}
+				<div class="segment">
+					<div class="year"><h2>{{ post_group[0].year }}</h2></div>
+					<div class="posts">
+						{% for post in post_group %}
+						<div class="post">
+							<a href="/{{ post.link }}">{{ post.title }}</a>
+							<time>{{ post.date_alt }}</time>
+						</div>
+						{% endfor %}		
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</section>
+		<section id="secondary">
+			<div class="sidebar">
+				{% include 'partials/author-intro-category.html' %}
+			</div>
+		</section>
+	</div>
+</main>
+
+{% include 'partials/footer.html' %}

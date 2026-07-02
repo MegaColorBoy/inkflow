@@ -1,0 +1,97 @@
+.author-head {
+
+	display: flex;
+	flex-direction: row;
+	margin: 50px 0 50px 0;
+	align-items: center;
+
+	.logo {
+		background-image: url('../images/site/logo.png');
+		border-radius: 999em;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	// Used in home page
+	&.main {
+		
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.title {
+			margin-left: 30px;
+			margin-bottom: 20px;
+
+			h1 {
+				font-size: 36px;
+				margin: 0px;
+			}
+
+			p {
+				font-weight: 300;
+				font-size: 24px;
+				margin: 0px;
+			}	
+		}
+
+		.logo {
+			width: 150px;
+			height: 150px;
+		}
+
+		&.alt {
+
+			.content {
+				margin-bottom: 0;
+				flex-direction: row;
+				width: 100%;
+				align-items: center;
+			}
+
+			.logo {
+				width: 70px;
+				height: 70px;
+			}
+
+			.title {
+				margin-bottom: 0px;
+				margin-left: 20px;
+				h1 {
+					font-size: 24px;
+				}
+
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.links {
+		margin-left: 30px;
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: inline-block;	
+				margin: 0 10px;
+				font-size: 18px;
+
+				&:first-child {
+					margin-left: 0px;
+				}
+
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+
+}

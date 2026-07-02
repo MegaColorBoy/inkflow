@@ -1,0 +1,45 @@
+{% if post.section == "blogmarks" %}
+<div class="day article">
+	<h2><a href="/{{ post.link }}">{{ post.title }}</a></h2>
+	{{ post.content }}
+</div>
+{% elif post.section == "travel" %}
+<div class="travel article lazy" data-src="{{ post.preview_image_url }}">
+    <div class="container">
+		<ul class="tags">
+			{% for category in post.categories %}
+			<li>
+				<a href="{{ category.link }}">
+					{{ category.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+    	<h1 class="heading"><a href="/{{ post.link }}">{{ post.title }}</a></h1>
+        <p class="description">{{ post.summary }}</p>
+        <time>{{ post.date }}</time>
+    </div>
+</div>
+{% else %}
+<div class="article">
+	<div class="article-header">
+		<h1 class="heading"><a href="/{{ post.link }}">{{ post.title }}</a></h1>
+		<p class="description">{{ post.summary }}</p>
+	</div>
+	<div class="article-body">
+		{{ post.content }}
+	</div>
+	<div class="article-footer">
+		<time>{{ post.date }}</time>
+		<ul class="tags">
+			{% for category in post.categories %}
+			<li>
+				<a href="{{ category.link }}">
+					{{ category.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endif %}

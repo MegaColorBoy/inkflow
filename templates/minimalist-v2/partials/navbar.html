@@ -1,0 +1,20 @@
+<header class="header">
+	<!-- Logo with Author Name -->
+	<div class="author">
+		<a href="/">
+			<img src="/static/logo.png" alt="megacolorboy">
+			<div class="name">
+				<h1>Abdush Shakoor's Weblog</h1>
+				<p>Writings, experiments & ideas.</p>
+			</div>
+		</a>
+	</div>
+	<!-- Logo with Author Name -->
+	<nav>
+		<ul class="menu">
+			{% for item in menu %}
+				<li><a href="{{ item.link }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>	
+</header>

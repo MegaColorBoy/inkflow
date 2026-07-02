@@ -1,0 +1,28 @@
+{% include 'partials/header.html' %}
+
+<main>
+	<div class="two-col-grid">
+		<!-- Displays 4-5 full articles  -->
+		<section id="primary">
+			<div class="articles">
+				{% for post in posts %}
+					{% include 'partials/article.html' %}
+				{% endfor %}
+			</div>
+			{% include 'partials/paginator.html' %}
+		</section>
+		<!-- 
+			Contains blog links that I follow 
+			Bookmarks
+			Interesting quotes/content
+		-->
+		<section id="secondary">
+			<div class="sidebar">
+				{% include 'partials/author-intro.html' %}
+				{% include 'partials/tags.html' %}
+			</div>
+		</section>
+	</div>
+</main>
+
+{% include 'partials/footer.html' %}

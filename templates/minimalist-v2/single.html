@@ -1,0 +1,18 @@
+{% include 'partials/header.html' %}
+
+<main>
+	<div class="two-col-grid">
+		<section id="primary">
+			<div class="articles">
+				{% include 'partials/article.html' %}
+			</div>
+		</section>
+		<section id="secondary">
+			<div class="sidebar">
+				{% include 'partials/author-intro-single.html' %}
+			</div>
+		</section>
+	</div>
+</main>
+
+{% include 'partials/footer.html' %}

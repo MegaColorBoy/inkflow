@@ -1,0 +1,22 @@
+{% include 'partials/header.html' %}
+
+<div class="article-top">
+	<a class="back" href="/{{ directory }}"><span>&larr;</span> Back</a>
+	<p class="date">Published on {{ post.date }}</p>	
+</div>
+
+<main>
+	<section class="article-head">
+		<p class="cat">{{ post.category }}</p>
+		<h1>{{ post.title }}</h1>
+		{% if post.summary|length > 1 %}
+			<p class="desc">{{ post.summary }}</p>
+		{% endif %}
+		<p class="date">{{ post.readingTime }}</p>
+	</section>
+	<article>
+		{{ post.content }}
+	</article>
+</main>
+
+{% include 'partials/footer.html' %}

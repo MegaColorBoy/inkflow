@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+<body>
+	{% include 'navbar.html' %}
+	<r-grid columns=8 class="archive-listing">
+		{% for postGroup in posts %}
+			<hr class="divider"/>
+			<r-cell class="year" span="row">
+				<h2>{{ postGroup[0].year }}</h2>
+			</r-cell>
+			{% for post in postGroup %}	
+				<r-cell class="post" span="2">
+					<p class="date">{{ post.date }}</p>
+					<h4><a href="{{ post.section }}/{{ post.slug }}/">{{ post.title }}</a></h4>
+					<p>{{ post.summary }}</p>
+				</r-cell>
+			{% endfor %}
+		{% endfor %}
+	</r-grid>
+</body>
+{% include 'footer.html' %}

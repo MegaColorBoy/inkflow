@@ -1,0 +1,133 @@
+[site]
+name = "megacolorboy"
+url = "https://www.megacolorboy.com"
+author = "Abdush Shakoor"
+theme = "minimalist-v2"
+logo = "logo.gif"
+pagination_limit = 8
+enable_archive = true
+enable_tags = false
+export_rss_feed = false
+export_json = false
+rss_description = "Writing, experiments & ideas."
+
+# Template for new post metadata
+meta_template = """
+title: {title}
+date: {date}
+slug: {slug}
+category: {category}
+preview_image_url: Place URL here.
+summary: Write your summary here.
+status: inactive
+
+Start writing your content here.
+"""
+
+[[sections]]
+title = "Home"
+url = "/"
+page_type = "main"
+display_in_menu = false
+enable_listing = true
+enable_pagination = true
+
+[sections.seo]
+title = "Home"
+description = "Writings, experiments & ideas"
+
+[[sections]]
+title = "About"
+url = "/about"
+content_directory = "about"
+page_type = "single"
+display_in_menu = true
+
+[sections.seo]
+title = "A little bit about myself"
+description = "Here's a not-so-formal kind of introduction about myself."
+
+[[sections]]
+title = "Archive"
+url = "/archive"
+content_directory = "archive"
+page_type = "archive"
+display_in_menu = true
+
+[sections.seo]
+title = "Archive"
+description = "Here's a collection of articles that I've written over the years."
+
+[[sections]]
+title = "Writings"
+url = "/writings"
+content_directory = "writings"
+page_type = "multiple"
+display_in_menu = false
+enable_listing = true
+enable_pagination = true
+show_in_recent_articles = true
+
+[sections.seo]
+title = "Writings"
+description = "Sometimes, I write stuff about computers, math, technology & design."
+
+[[sections]]
+title = "Today I Learned"
+url = "/til"
+content_directory = "til"
+page_type = "multiple"
+display_in_menu = false
+enable_listing = true
+enable_pagination = true
+show_in_recent_articles = true
+
+[sections.seo]
+title = "Today I Learned"
+description = "A collection of short write-ups on the things that I learn on a day-to-day basis."
+
+[[sections]]
+title = "Blogmarks"
+url = "/blogmarks"
+content_directory = "blogmarks"
+page_type = "multiple"
+display_in_menu = false
+enable_listing = true
+enable_pagination = true
+show_in_recent_articles = true
+
+[sections.seo]
+title = "Blogmarks"
+description = "A collection of short write-ups on the things that I learn on a day-to-day basis."
+
+[[sections]]
+title = "Travel"
+url = "/travel"
+content_directory = "travel"
+page_type = "multiple"
+display_in_menu = false
+enable_listing = true
+enable_pagination = true
+show_in_recent_articles = true
+
+[sections.seo]
+title = "Travel"
+description = "Sharing about my travel adventures."
+
+[sections.template]
+single = "travel-single.html"
+
+[[sections]]
+title = "Resume"
+url = "/resume"
+content_directory = "resume"
+data_type = "json"
+page_type = "custom"
+display_in_menu = true
+
+[sections.seo]
+title = "Resume"
+description = "My resume"
+
+[sections.template]
+custom = "resume-v2.html"

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel="stylesheet" href="fonts/inter.css" type="text/css">
+	<style>
+		html {
+			background-color: #EEEEEE;
+			/*cursor: url("cursor.png"), auto;*/
+		}
+		body {
+			max-width: 700px;
+			margin: 0px auto;
+			padding: 100px;
+			font: 14px/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			background-color: #F7F7F7;
+			color: #222;
+			letter-spacing: -0.055em;
+		}
+
+		h1 {
+			font-size: 2.6em;
+			font-weight: 800;
+		}
+
+		h1, h2, h3 {
+			line-height: 1.4;
+			letter-spacing: -0.055em;
+		}
+
+		h2,h3 {
+			font-weight: 700;
+		}
+
+		ul.listing {
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			grid-gap: 40px;
+		}
+
+		ul.listing > li > p.date,
+		ul.listing > li > p.cat {
+			font-size: 0.9em;
+			font-weight: 400;
+			margin: 0 0 5px;
+		}
+
+		ul.listing > li > p.cat {
+			color: rgba(51,51,51,0.6);
+			font-weight: 700;
+		}
+
+		ul.listing h4 {
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+
+		ul.listing h4 a {
+			/*text-decoration: none;*/
+		}
+
+		ul.listing h4 a:hover {
+			color: #ff5a5f;
+		}
+
+		ul.listing p:last-child {
+			margin-bottom: 0px;
+		}
+
+		ul.listing .desc {
+			font-size: 0.9em;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;  
+			overflow: hidden;
+			font-weight: 500;
+		}
+
+		a {
+			color: #333;
+		}
+
+		.article-head {
+			/*margin: 80px 0px 100px;*/
+			margin: 0 auto 0 0;
+			width: 350px;
+		}
+
+		.section {
+			margin: 80px 0;
+		}
+
+		.section:first-child {
+			margin-top: 0;
+		}
+
+		.section:last-child {
+			margin-bottom: 0;
+		}
+
+		.section .title {
+			margin-bottom: 50px;
+			border-top: 3px solid #222;
+		}
+
+		.header {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 0 150px;
+		}
+
+		.header a {
+			font-weight: 600;
+		}
+
+		.header p {
+			margin: 0;
+			font-weight: 700;
+		}
+
+		.header .author {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.header .author .logo {
+			width: 30px;
+			height: 30px;
+			/*background-color: #ff5a5f;*/
+			background-image: url('logo.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 100%;
+			margin-right: 15px;
+		}
+
+		.menu {
+			list-style: none;
+		}
+
+		.menu li a {
+			text-decoration: none;
+			color: rgba(51,51,51,0.6);
+		}
+
+		.menu li a:hover {
+			color: rgba(51,51,51,1);
+		}
+
+		.menu li {
+			margin: 0 10px;
+			display: inline-block;
+		}
+
+		.menu li:first-child {
+			margin-left: 0;
+		}
+
+		.menu li:last-child {
+			margin-right: 0;
+		}
+
+		.title {
+			transition: 0.2s all ease;
+		}
+
+		.title h2 a {
+			text-decoration: none;
+			transition: 0.2s all ease;
+		}
+
+		.title h2 a span {
+			display: inline-block;
+			transform: translateX(5px);
+			transition: 0.2s all ease;
+		}
+
+		.title h2 a:hover {
+			color: #ff5a5f;
+		}		
+
+		.title h2 a:hover span {
+			transform: translateX(10px);
+			transition: 0.2s all ease;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="header">
+		<div class="author">
+			<div class="logo"></div>
+			<p>megacolorboy</p>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Writings</a></li>
+				<li><a href="#">Today I Learned</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="article-head">
+			<h1>Today I Learned</h1>
+			<p>A collection of short write-ups on the things that I learn on a day-to-day basis.</p>
+		</section>
+
+		<section class="section">
+			<div class="column">
+				<div class="title">
+					<h2><a href="#">2021</a></h2>
+				</div>
+				<ul class="listing">
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">How to identify the current target of an event?</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Find the difference between two arrays</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Prevent loading a webpage from Back-Forward cache</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Allow inline elements in CKEditor</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Add search functionality to your static site</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Refresh browser window with query parameters</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">How to identify the current target of an event?</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Find the difference between two arrays</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Prevent loading a webpage from Back-Forward cache</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Allow inline elements in CKEditor</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Add search functionality to your static site</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Refresh browser window with query parameters</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+				</ul>
+				<!-- <div class="link-footer">
+					<a href="#">Browse all 136 articles &rarr;</a>
+				</div> -->
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="column">
+				<div class="title">
+					<h2><a href="#">2020</a></h2>
+				</div>
+				<ul class="listing">
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">How to identify the current target of an event?</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Find the difference between two arrays</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Prevent loading a webpage from Back-Forward cache</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Allow inline elements in CKEditor</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Add search functionality to your static site</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+					<li>
+						<p class="cat">JavaScript</p>
+						<h4><a href="til.html">Refresh browser window with query parameters</a></h4>
+						<p class="date">02.02.2021 <span>•</span> 10 minute read</p>
+						<!-- <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus veniam nesciunt neque ipsam nostrum aspernatur officiis blanditiis accusantium hic! Optio fugiat, dolorum unde iure culpa quo tempore, perspiciatis eveniet?</p> -->
+					</li>
+				</ul>
+				<!-- <div class="link-footer">
+					<a href="#">Browse all 136 articles &rarr;</a>
+				</div> -->
+			</div>
+		</section>
+	</main>
+</body>
+</html>

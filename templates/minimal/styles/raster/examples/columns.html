@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Raster grid examples</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../raster2.css?v=20">
+  <style>
+
+r-grid > r-cell {
+  border: 1px solid black;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+body > r-grid > r-cell {
+  padding: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <h1>
+    Raster<br>
+    Simple Grid System<br>
+    ————–<br>
+    Column examples<br><br>
+  </h1>
+  <r-grid columns-s=1 columns=2 columns-l=3 class="examples">
+    <r-cell>
+      <h2>8 columns</h2>
+      <r-grid columns="8">
+        <r-cell>1</r-cell><r-cell>2</r-cell><r-cell>3</r-cell><r-cell>4</r-cell>
+        <r-cell>5</r-cell><r-cell>6</r-cell><r-cell>7</r-cell><r-cell>8</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=3>3</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=7-8>7-8</r-cell>
+        <r-cell span=2+2>2+2</r-cell>
+        <r-cell span=5-8>5-8</r-cell>
+        <r-cell span=1-4>1-4</r-cell>
+        <r-cell span=6..>6..</r-cell>
+        <r-cell span=2..>2..</r-cell>
+        <r-cell span=4..>4..</r-cell>
+        <r-cell span=4-5>4-5</r-cell>
+      </r-grid>
+    </r-cell>
+    <r-cell>
+      <h2>6 columns</h2>
+      <r-grid columns="6">
+        <r-cell>1</r-cell><r-cell>2</r-cell><r-cell>3</r-cell>
+        <r-cell>4</r-cell><r-cell>5</r-cell><r-cell>6</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=2>2</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=5-6>5-6</r-cell>
+        <r-cell span=2+2>2+2</r-cell>
+        <r-cell span=5-6>5-6</r-cell>
+        <r-cell span=1-4>1-4</r-cell>
+        <r-cell span=6..>6..</r-cell>
+        <r-cell span=2..>2..</r-cell>
+        <r-cell span=4..>4..</r-cell>
+        <r-cell span=4-5>4-5</r-cell>
+      </r-grid>
+    </r-cell>
+    <r-cell>
+      <h2>9 columns</h2>
+      <r-grid columns="9">
+        <r-cell>1</r-cell><r-cell>2</r-cell><r-cell>3</r-cell><r-cell>4</r-cell><r-cell>5</r-cell>
+        <r-cell>6</r-cell><r-cell>7</r-cell><r-cell>8</r-cell><r-cell>9</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=3>3</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=7-9>7-9</r-cell>
+        <r-cell span=2+2>2+2</r-cell>
+        <r-cell span=5-7>5-7</r-cell>
+        <r-cell span=1-4>1-4</r-cell>
+        <r-cell span=6..>6..</r-cell>
+        <r-cell span=2..>2..</r-cell>
+        <r-cell span=4..>4..</r-cell>
+        <r-cell span=4-5>4-5</r-cell>
+      </r-grid>
+    </r-cell>
+    <r-cell>
+      <h2>3 columns</h2>
+      <r-grid columns="3">
+        <r-cell>1</r-cell><r-cell>2</r-cell><r-cell>3</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=2>2</r-cell>
+        <r-cell span=1-2>1-2</r-cell>
+        <r-cell span=2+2>2+2</r-cell>
+        <r-cell span=1-2>1-2</r-cell>
+        <r-cell span=1..>1..</r-cell>
+        <r-cell span=2..>2..</r-cell>
+      </r-grid>
+    </r-cell>
+    <r-cell span=2 class="only-large-window">
+      <h2>16 columns</h2>
+      <r-grid columns="16">
+        <r-cell>1</r-cell><r-cell>2</r-cell><r-cell>3</r-cell><r-cell>4</r-cell>
+        <r-cell>5</r-cell><r-cell>6</r-cell><r-cell>7</r-cell><r-cell>8</r-cell>
+        <r-cell>9</r-cell><r-cell>10</r-cell><r-cell>11</r-cell><r-cell>12</r-cell>
+        <r-cell>13</r-cell><r-cell>14</r-cell><r-cell>15</r-cell><r-cell>16</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=6>6</r-cell>
+        <r-cell></r-cell>
+        <r-cell span=11-16>11-16</r-cell>
+        <r-cell span=2+4>2+4</r-cell>
+        <r-cell span=6-14>6-14</r-cell>
+        <r-cell span=1-4>1-4</r-cell>
+        <r-cell span=6..>6..</r-cell>
+        <r-cell span=4..>4..</r-cell>
+        <r-cell span=8..>8..</r-cell>
+        <r-cell span=4-10>4-5</r-cell>
+      </r-grid>
+    </r-cell>
+  </r-grid>
+
+  <br><br>
+  <a href="./" style="margin-left:-0.15rem">&larr; Back to examples</a>
+
+
+
+</body>
+</html>

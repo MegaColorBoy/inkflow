@@ -1,0 +1,15 @@
+<!-- Tags -->
+<div>
+	<h3>Categories</h3>
+	<ul class="tags">
+		{% for category in categories %}
+		<li>
+			<a href="{{ category.link }}">
+				{{ category.title }}
+				<span class="count">{{ category.count }}</span>
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+<!-- Tags -->

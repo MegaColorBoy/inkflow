@@ -1,0 +1,22 @@
+<div class="article">
+	<div class="article-header">
+		<ul class="tags">
+			{% for category in post.categories %}
+			<li>
+				<a href="{{ category.link }}">
+					{{ category.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<h1 class="heading"><a href="/{{ post.link }}">{{ post.title }}</a></h1>
+		<p class="description">{{ post.summary }}</p>
+	</div>
+	<div class="article-footer">
+		<time>{{ post.date }}</time>
+	</div>
+	<div class="article-body">
+		{{ post.content }}
+	</div>
+	
+</div>
