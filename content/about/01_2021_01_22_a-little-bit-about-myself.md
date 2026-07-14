@@ -4,29 +4,32 @@ slug: about
 category: Introduction
 summary: Here's a not-so-formal kind of introduction about myself.
 
-Hello there! My name is Abdush Shakoor and I like problem-solving and building stuff for fun!
+Hello! I'm Abdush Shakoor and I like to spend my evenings problem-solving, researching and building stuff for fun with a curiosity and passion for Computer Science, Mathematics, Software Engineering, Digital Design and Technology.
 
-I'm a full stack software engineer, residing in Dubai, United Arab Emirates, with over 10+ years of professional experience and a passion for Computer Science, Mathematics, Software Engineering, Digital Design and Technology.
+I have been writing software professionally for more than 10 years. During my early days of my career, I was mostly focused on building websites and designing user interfaces. Later, I opted to specialize in backend development, security, distributed systems and service-oriented architecture using various technologies and programming languages (PHP, C#, JavaScript, Laravel, .NET Core, MySQL and Microsoft SQL Server).
 
-During my early days of my career, I was mostly focused on building websites and designing user interfaces. Later, I opted to specialize in backend development, security, distributed systems and service-oriented architecture using various technologies and programming languages (PHP, C#, JavaScript, Laravel, .NET Core, MySQL and Microsoft SQL Server).
+Right now, I'm working full-time as a Senior DevOps Engineer at the [Ministry of Cabinet Affairs](https://uaecabinet.ae) as part of the IT Operations and Infrastructure team. The work is a blend of SRE, IT operations and deployments &mdash; sometimes, it's better to step outside your comfort zone.
 
 Also, I'm the type of guy who dabbles a lot with Linux, playing CTFs, configuring databases and servers, deployments and loves to live inside a terminal with multiple split-windows in a single `tmux` session in different tabs.
 
-Currently, I work at the [Ministry of Cabinet Affairs](https://uaecabinet.ae) as a Senior DevOps Engineer who looks after deployments, troubleshooting and ensuring things run smoothly on production.
+Currently, I'm based in Dubai, United Arab Emirates. A father to a wonderful daughter, a husband to a loving wife and I love keeping myself fit by engaging in toss-juggling, calisthenics and jump rope.
 
-Oh, do you have an idea that you're stuck with? Need help with deployments? Want to build an awesome system that implements strong security protocols and best practices? [Mail me about it](mailto:megacolorboy@gmail.com) and I'll check up on you!
+## Career
+
+My first role was at [Key Information Technology](https://kit.ae). I worked as a full-stack developer and contributed to the development of the company's website and internal tools. I was there for about 3 years.
+
+I later worked at [Planet Green Solutions](https://pgsuae.com) as a Backend Developer and eventually into a Senior Backend Developer and honestly, this is where I learnt the most. I wrote applications primarily in .NET Core, Laravel and ocassionally, Django. Got my hands dirty with Linux and DevOps and went down the rabbit-hole of tinkering with systems and infrastructure. I was here for about 6.5 years to be exact.
+
+I did some internships before the commencement of my professional career, the last one working as a Summer Intern at [Oracle Systems](https://oracle.com).
 
 [Check out my résumé to learn more about my work experiences and projects &rarr;](../resume/)
 
-In my spare time, I love to tinker with my computer science and software engineering projects like implementing new algorithms, learning new programming languages or paradigms, building a game and so on. I also design conceptual user interfaces after being exposed to the [DailyUI](https://dailyui.co) project.
+## Writings
 
-This blog is powered by a [custom-built static site generator](https://github.com/MegaColorBoy/inkflow) written in Python. No bootstrap, no heavy UI frameworks or libraries are used as I found it quite unnecessary for a minimalist blog.
-
-Oh, I'm an intermediate-level toss juggler and I love to spend time practicing my juggling skills. Apart from that, I practice calisthenics, read books and listen to instrumental music.
-
-Illustrating artworks used to be a part of my life, but now it has become one of my hobbies as well. You can view my artworks on my [Behance](https://www.behance.net/abdushshakoor) profile.
+I have written over 200+ posts since 2017 and my most popular post so far is ["Mastering PHPStorm: Essential Shortcuts and Tips for Faster Coding"](https://megacolorboy/til/posts/mastering-php-storm-essential-shortcuts-and-tips-for-faster-coding) and I write a lot of TIL-based posts which has gained a lot of popularity that allowed me to get myself enrolled in JetBrains's [Content Creators Program](https://www.jetbrains.com/community/content-creators/).
 
 ## Areas of Interest
+
 My areas of interest include but not limited to:
 
 + Algorithms and Data Structures
@@ -45,7 +48,8 @@ My areas of interest include but not limited to:
 + Data Science and Engineering
 + User Interface and Experience
 
-## Books I read
+## Recommended list of books
+
 I recommend you to try and read these books:
 
 + [The Alchemist](https://www.amazon.com/Alchemist-Paulo-Coelho/dp/0061122416)
@@ -60,8 +64,15 @@ I recommend you to try and read these books:
 + [Thinking, Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
 + [Ultralearning: Accelerate Your Career, Master Hard Skills and Outsmart the Competition](https://www.amazon.ae/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X)
 
+## About this site
+
+This blog is powered by a [custom-built static site generator](https://github.com/MegaColorBoy/inkflow) written in Python. No bootstrap, no heavy UI frameworks or libraries are used as I found it quite unnecessary for a minimalist blog. 
+
 ## Where can you find me?
-My username in most places is <mark>@megacolorboy</mark>. This is where you can find me:
+
+Oh, do you have an idea that you're stuck with? Need help with servers or deployments? Want to build an awesome system that implements strong security protocols and best practices? [Mail me about it](mailto:megacolorboy@gmail.com) and I'll check up on you!
+
+Or you can find me at these places:
 
 + [Twitter](https://www.x.com/megacolorboy) &mdash; Come and say Hi!
 + [GitHub](https://www.github.com/megacolorboy) &mdash; Code, code and more code!
