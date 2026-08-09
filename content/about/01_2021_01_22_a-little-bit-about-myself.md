@@ -66,7 +66,7 @@ I recommend you to try and read these books:
 
 ## About this site
 
-This blog is powered by a [custom-built static site generator](https://github.com/MegaColorBoy/inkflow) written in Python. No bootstrap, no heavy UI frameworks or libraries are used as I found it quite unnecessary for a minimalist blog. 
+This blog is powered by a [custom-built static site generator](https://github.com/MegaColorBoy/inkflow) written in Python, which had undergone [many rewrites](https://megacolorboy.com/writings/posts/rewriting-my-ssg-again-the-right-way), spwaning of single god-classes and messy code. Yet, no bootstrap, no heavy UI frameworks or libraries are used as I found it quite unnecessary for a minimalist-type blog.
 
 ## Where can you find me?
 
